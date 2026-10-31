@@ -1,0 +1,127 @@
+{
+    "acmrivian_DSE_drivemodes_electricMotor": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Drive Modes (eMotor)",
+            "value":250,
+        },
+        "slotType" : "acmrivian_DSE_drivemodes",
+
+        "controller": [
+            ["fileName"],
+            ["driveModes"]
+            ["AVAS"]
+        ],
+        "AVAS": {
+            "forwardSoundEvent":"event:>Engine>Pedestrian Warning>Version_01",
+            "reverseSoundEvent":"event:>Engine>Pedestrian Warning>Version_01",
+            "forwardSoundNode:":["f18"],
+            "reverseSoundNode:":["r2"],
+            "warningMaxSpeed": 15,
+            "warningVolume": 0.1
+        }
+
+        "driveModes": {
+            "enabledModes":["conserve", "sport", "offroad", "off"]
+            "defaultMode": "conserve"
+            "defaultSettings": [
+                ["type"]
+				["controller", {"controllerName":"electronicDiffLock", "isEnabled":true, "minimumLock":"default"}]
+
+                ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.frontMotor.slipThreshold": 0.05,
+                            "tractionControl.wheelGroupSettings.rearMotor.slipThreshold": 0.05,
+                             "yawControl.isEnabled":true,
+                        }]
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.frontMotor.slipThreshold": 0.1,
+                            "tractionControl.wheelGroupSettings.rearMotor.slipThreshold": 0.1,
+                            "yawControl.isEnabled":true,
+                        }]
+            ],
+            "modes": {
+                "conserve": {
+                    "name": "Conserve",
+                    "order": 10,
+                    "settings": [
+                        ["type"]
+                        ["controller", {"controllerName":"gauge", "modeName": "CONSERVE", "modeColor": "#1e7ccc"}]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"5cf9ff", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+                "sport": {
+                    "name": "Sport",
+                    "order": 20,
+                    "settings": [
+                        ["type"]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.frontMotor.slipThreshold": 0.3,
+                            "tractionControl.wheelGroupSettings.rearMotor.slipThreshold": 0.3,
+                             "yawControl.isEnabled":true,
+                        }]
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.frontMotor.slipThreshold": 0.2,
+                            "tractionControl.wheelGroupSettings.rearMotor.slipThreshold": 0.2,
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                            "yawControl.yawAvThreshold": 0.6
+                        }]
+
+                        ["controller", {"controllerName":"gauge", "modeName": "SPORT", "modeColor": "#8F0101"}]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"DA0C0C", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+				
+				"offroad": {
+                    "name": "Off-Road",
+                    "order": 30,
+                    "settings": [
+                        ["type"]
+						["controller", {"controllerName":"electronicDiffLock", "isEnabled":true, "minimumLock":"default"}]
+						
+                        ["controller", {
+						"controllerName":"motorTorqueControl",
+						"tractionControl.isEnabled": true,
+						"tractionControl.wheelGroupSettings.frontMotor.slipThreshold": 0.15,
+						"tractionControl.wheelGroupSettings.rearMotor.slipThreshold": 0.15,
+						"yawControl.isEnabled": false
+						}]
+
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.frontMotor.slipThreshold": 0.15,
+                            "tractionControl.wheelGroupSettings.rearMotor.slipThreshold": 0.15,
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.6,
+                            "yawControl.yawAvThreshold": 1.2
+                        }]
+
+                        ["controller", {"controllerName":"gauge", "modeName": "OFF-ROAD", "modeColor": "#8F0101"}]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"964b00", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+
+                "off": {
+                    "name": "ESC & TC Off",
+                    "order": 40,
+                    "settings": [
+                        ["type"]
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"motorTorqueControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"brakeControl", "isEnabled":false}]
+
+                        ["controller", {"controllerName":"gauge", "modeName": "ESC OFF", "modeColor": "#343838"}]
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"545454", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                }
+            },
+        },
+    },
+}

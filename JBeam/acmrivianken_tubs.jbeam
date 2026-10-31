@@ -1,0 +1,38 @@
+{
+"acmrivian_tubs_F": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Front Fender Tubs",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tubs_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tubs_F", ["acmrivian_body"]],
+    ],
+},
+"acmrivian_tubs_R": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Rear Fender Tubs",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tubs_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tubs_R", ["acmrivian_body"]],
+    ],
+},
+"acmrivian_tubs_R_pickup": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Rear Fender Tubs",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tubs_R_pickup",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tubs_R_pickup", ["acmrivian_body"]],
+    ],
+},
+}

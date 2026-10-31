@@ -1,0 +1,433 @@
+{
+"acmrivian_tunnel_hatch_L": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Left Tunnel Hatch",
+        "value":400,
+    },
+    "slotType" : "acmrivian_tunnel_hatch_L",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["acmrivian_tunnel_hatch_L", ["acmrivian_tunnel_hatch_L"]],
+    ],
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"tunnelCouplerL"}],
+    ]
+	"tunnelCouplerL":{
+        "groupType": "autoCoupling",
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["th_cn_l",      "th10l",        40000,                     0.04,                   0.02,                      0.2,                 0.1,                   "tunnel_latch_L"]
+        ]
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["th10l"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Trunk>modern_05_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Trunk>modern_05_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 25,
+        "openForceDuration": 0.2,
+        "closeForceMagnitude": 150,
+        "closeForceDuration": 3,
+    }
+    "triggers":[
+        ["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["tunnelL", "", "th1l","th3l","th6l", "box", {"x":0.05, "y":0.01, "z":0.04}, {"x":-8, "y":0, "z":8}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.025, "y":0.632, "z":-0.002}],
+    ],
+    "triggerEventLinks":[
+        ["triggerId:triggers", "action", "targetEventId:events"],
+        ["tunnelL", "action0", "tunnelL"],
+    ],
+    "events":[
+        ["id", "title", "desc"],
+        ["tunnelL", "", "", {"onUp":"controller.getControllerSafe('tunnelCouplerL').toggleGroup()"}],
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+         //--TAILGATE--
+         {"collision":true},
+         {"selfCollision":false},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"acmrivian_tunnel_hatch_L"},
+         {"nodeWeight":3},
+		 ["th1l", 0.9253,1.0401,0.3558],
+		 ["th2l", 0.9525,1.3322,0.3558],
+         ["th3l", 0.9636, 1.5715, 0.3586],
+         ["th4l", 0.9982, 1.8082, 0.7281],
+         ["th5l", 0.9452, 1.6359, 0.9124],
+         ["th6l", 0.9198, 1.381, 0.9254],
+         ["th7l", 0.9076, 1.1987, 0.2588],
+         ["th8l", 0.9148, 1.5426, 0.2587],
+		 {"group":""},
+
+		 //rigidifier
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":2.5},
+         ["th9l",0.6676,1.4381,0.566],
+
+         //latch node
+		 {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":1},
+         ["th10l", 0.6936, 1.3535, 0.8223],
+         
+         ["th_cn_l", 0.6936, 1.3535, 0.8223],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1501000,"beamDamp":25},
+          {"beamDeform":30000,"beamStrength":"FLT_MAX"},
+          //main shape
+          {"deformLimitExpansion":1.2},
+          ["th5l","th6l"],
+          ["th4l","th5l"],
+          ["th4l","th6l"],
+          ["th1l","th6l"],
+          ["th3l","th4l"],
+          ["th1l","th2l"],
+          ["th2l","th3l"],
+		  
+		  //coupler node
+		  ["th_cn_l","q1l"],
+		  ["th_cn_l","q8l"],
+		  ["th_cn_l","q1el"],
+		  ["th_cn_l","f9l"],
+		  ["th_cn_l","rf4l"],
+		  
+		  //hinges
+		  {"beamSpring":1501000,"beamDamp":25},
+		  ["th1l","th7l"],
+          ["th3l","th8l"],
+          ["th4l","th8l"],
+          ["th6l","th7l"],
+          ["th5l","th8l"],
+          ["th5l","th7l"],
+          ["th7l","th8l"],
+          ["th2l","th7l"],
+          ["th2l","th8l"],
+		  
+          //crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+          ["th1l","th4l"],
+          ["th3l","th6l"],
+          ["th2l","th6l"],
+          ["th2l","th4l"],
+          ["th1l","th5l"],
+          ["th3l","th5l"],
+		
+          //rigidifier
+          {"beamSpring":2201000,"beamDamp":30},
+          {"beamDeform":100000,"beamStrength":"FLT_MAX"},
+          ["th8l","th9l"],
+          ["th7l","th9l"],
+          ["th4l","th9l"],
+          ["th5l","th9l"],
+          ["th6l","th9l"],
+          ["th1l","th9l"],
+          ["th2l","th9l"],
+          ["th3l","th9l"],
+		  ["th9l","th10l"],
+		  
+		  //latch node
+          {"beamSpring":601000,"beamDamp":250},
+          {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+		  ["th4l","th10l"],
+          ["th5l","th10l"],
+          ["th6l","th10l"],
+          ["th3l","th10l"],
+          ["th1l","th10l"],
+          ["th2l","th10l"],
+        
+		  //hinge
+          {"beamSpring":1401000,"beamDamp":0},
+          {"beamDeform":50000,"beamStrength":40000},
+		  {"breakGroup":"tunnel_latch_L"},
+		  ["th8l","f4ll"],
+		  ["th8l","f8ell"],
+		  ["th8l","f9ll"],
+		  ["th8l","f3ell"],
+		  ["th8l","f3el"],
+		  ["th8l","f9l"],
+		  
+		  ["th7l","f4ll"],
+		  ["th7l","f8ell"],
+		  ["th7l","f9ll"],
+		  ["th7l","f3ell"],
+		  ["th7l","f3el"],
+		  ["th7l","f9l"],
+          {"breakGroup":""},
+		  
+		  //limiter
+          {"beamType":"|BOUNDED","beamLongBound":2,"beamShortBound":1},
+          {"beamDeform":150000,"beamStrength":15000},
+          {"beamSpring":0,"beamDamp":50},
+          {"beamLimitSpring":500,"beamLimitDamp":75},
+          ["th5l", "th_cn_l", {"breakGroup":"tunnel_latch_L"}],
+          ["th6l", "th_cn_l", {"breakGroup":"tunnel_latch_L"}],
+		  
+		  {"beamLongBound":3.15,"beamShortBound":1},
+          {"beamLimitSpring":250000,"beamLimitDamp":150},
+          ["th5l", "th_cn_l", {"breakGroup":"tunnel_latch_L"}],
+          ["th6l", "th_cn_l", {"breakGroup":"tunnel_latch_L"}],
+
+		  //pop open
+          {"beamPrecompression":1.05,"beamSpring":50000,"beamDamp":1320,"beamDeform":40000,"beamStrength":15000,"breakGroupType":1,"beamType":"|SUPPORT", "beamLongBound":25},
+          ["th5l", "th_cn_l", {"breakGroup":"tunnel_latch_L"}],
+          ["th6l", "th_cn_l", {"breakGroup":"tunnel_latch_L"}],
+          {"beamPrecompression":1},
+          {"breakGroupType":0},
+		  
+          //support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":1001000,"beamDamp":50},
+          {"beamDeform":7500,"beamStrength":230000},
+          {"breakGroup":"tunnel_latch_L_supportBeams"},
+		  ["th4l","q4l"],
+		  ["th4l","q1l"],
+		  ["th5l","q1l"],
+		  ["th5l","q1el"],
+		  ["th6l","q1el"],
+		  ["th6l","q1l"],
+		  ["th6l","q8l"],
+		  ["th1l","q8l"],
+		  ["th3l","f9ll"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //tailgate
+            {"group":"acmrivian_tunnel_hatch_L"},
+			{"triangleType":"NONCOLLIDABLE"},
+            {"dragCoef":8},
+            ["th6l","th1l","th2l"],
+            ["th2l","th3l","th4l"],
+            ["th4l","th6l","th2l"],
+            ["th5l","th6l","th4l"],
+			{"triangleType":"NORMALTYPE"},
+			{"group":""},
+        
+    ],
+},
+"acmrivian_tunnel_hatch_R": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Right Tunnel Hatch",
+        "value":400,
+    },
+    "slotType" : "acmrivian_tunnel_hatch_R",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["acmrivian_tunnel_hatch_R", ["acmrivian_tunnel_hatch_R"]],
+    ],
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"tunnelCouplerR"}],
+    ]
+	"tunnelCouplerR":{
+        "groupType": "autoCoupling",
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["th_cn_r",      "th10r",        40000,                     0.04,                   0.02,                      0.2,                 0.1,                   "tunnel_latch_R"]
+        ]
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["th10r"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Trunk>modern_05_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Trunk>modern_05_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 25,
+        "openForceDuration": 0.2,
+        "closeForceMagnitude": 150,
+        "closeForceDuration": 3,
+    }
+    "triggers":[
+        ["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["tunnelR", "", "th1r","th3r","th6r", "box", {"x":0.05, "y":0.01, "z":0.04}, {"x":8, "y":0, "z":-8}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.025, "y":0.632, "z":-0.003}],
+    ],
+    "triggerEventLinks":[
+        ["triggerId:triggers", "action", "targetEventId:events"],
+        ["tunnelR", "action0", "tunnelR"],
+    ],
+    "events":[
+        ["id", "title", "desc"],
+        ["tunnelR", "", "", {"onUp":"controller.getControllerSafe('tunnelCouplerR').toggleGroup()"}],
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+         {"collision":true},
+         {"selfCollision":false},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"acmrivian_tunnel_hatch_R"},
+         {"nodeWeight":3},
+		 ["th1r", -0.9253,1.0401,0.3558],
+		 ["th2r", -0.9525,1.3322,0.3558],
+         ["th3r", -0.9636, 1.5715, 0.3586],
+         ["th4r", -0.9982, 1.8082, 0.7281],
+         ["th5r", -0.9452, 1.6359, 0.9124],
+         ["th6r", -0.9198, 1.381, 0.9254],
+         ["th7r", -0.9076, 1.1987, 0.2588],
+         ["th8r", -0.9148, 1.5426, 0.2587],
+		 {"group":""},
+
+		 //rigidifier
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":2.5},
+         ["th9r", -0.6676,1.4381,0.566],
+
+         //latch node
+		 {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":1},
+         ["th10r", -0.6936, 1.3535, 0.8223],
+         
+         ["th_cn_r", -0.6936, 1.3535, 0.8223],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1501000,"beamDamp":25},
+          {"beamDeform":30000,"beamStrength":"FLT_MAX"},
+          //main shape
+          {"deformLimitExpansion":1.2},
+          ["th5r","th6r"],
+          ["th4r","th5r"],
+          ["th4r","th6r"],
+          ["th1r","th6r"],
+          ["th3r","th4r"],
+          ["th1r","th2r"],
+          ["th2r","th3r"],
+		  
+		  //coupler node
+		  ["th_cn_r","q1r"],
+		  ["th_cn_r","q8r"],
+		  ["th_cn_r","q1er"],
+		  ["th_cn_r","f9r"],
+		  ["th_cn_r","rf4r"],
+		  
+		  //hinges
+		  {"beamSpring":1501000,"beamDamp":25},
+		  ["th1r","th7r"],
+          ["th3r","th8r"],
+          ["th4r","th8r"],
+          ["th6r","th7r"],
+          ["th5r","th8r"],
+          ["th5r","th7r"],
+          ["th7r","th8r"],
+          ["th2r","th7r"],
+          ["th2r","th8r"],
+		  
+          //crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+          ["th1r","th4r"],
+          ["th3r","th6r"],
+          ["th2r","th6r"],
+          ["th2r","th4r"],
+          ["th1r","th5r"],
+          ["th3r","th5r"],
+		
+          //rigidifier
+          {"beamSpring":2201000,"beamDamp":30},
+          {"beamDeform":100000,"beamStrength":"FLT_MAX"},
+          ["th8r","th9r"],
+          ["th7r","th9r"],
+          ["th4r","th9r"],
+          ["th5r","th9r"],
+          ["th6r","th9r"],
+          ["th1r","th9r"],
+          ["th2r","th9r"],
+          ["th3r","th9r"],
+		  ["th9r","th10r"],
+		  
+		  //latch node
+          {"beamSpring":601000,"beamDamp":250},
+          {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+		  ["th4r","th10r"],
+          ["th5r","th10r"],
+          ["th6r","th10r"],
+          ["th3r","th10r"],
+          ["th1r","th10r"],
+          ["th2r","th10r"],
+        
+		  //hinge
+          {"beamSpring":1401000,"beamDamp":0},
+          {"beamDeform":50000,"beamStrength":40000},
+		  {"breakGroup":"tunnel_latch_R"},
+		  ["th8r","f4rr"],
+		  ["th8r","f8err"],
+		  ["th8r","f9rr"],
+		  ["th8r","f3err"],
+		  ["th8r","f3er"],
+		  ["th8r","f9r"],
+		  
+		  ["th7r","f4rr"],
+		  ["th7r","f8err"],
+		  ["th7r","f9rr"],
+		  ["th7r","f3err"],
+		  ["th7r","f3er"],
+		  ["th7r","f9r"],
+          {"breakGroup":""},
+		  
+		  //limiter
+          {"beamType":"|BOUNDED","beamLongBound":2,"beamShortBound":1},
+          {"beamDeform":150000,"beamStrength":15000},
+          {"beamSpring":0,"beamDamp":50},
+          {"beamLimitSpring":500,"beamLimitDamp":75},
+          ["th5r", "th_cn_r", {"breakGroup":"tunnel_latch_R"}],
+          ["th6r", "th_cn_r", {"breakGroup":"tunnel_latch_R"}],
+		  
+		  {"beamLongBound":3.15,"beamShortBound":1},
+          {"beamLimitSpring":250000,"beamLimitDamp":150},
+          ["th5r", "th_cn_r", {"breakGroup":"tunnel_latch_R"}],
+          ["th6r", "th_cn_r", {"breakGroup":"tunnel_latch_R"}],
+
+		  //pop open
+          {"beamPrecompression":1.05,"beamSpring":50000,"beamDamp":1320,"beamDeform":40000,"beamStrength":15000,"breakGroupType":1,"beamType":"|SUPPORT", "beamLongBound":25},
+          ["th5r", "th_cn_r", {"breakGroup":"tunnel_latch_R"}],
+          ["th6r", "th_cn_r", {"breakGroup":"tunnel_latch_R"}],
+          {"beamPrecompression":1},
+          {"breakGroupType":0},
+		  
+          //support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":1001000,"beamDamp":50},
+          {"beamDeform":7500,"beamStrength":230000},
+          {"breakGroup":"tunnel_latch_R_supportBeams"},
+		  ["th4r","q4r"],
+		  ["th4r","q1r"],
+		  ["th5r","q1r"],
+		  ["th5r","q1er"],
+		  ["th6r","q1er"],
+		  ["th6r","q1r"],
+		  ["th6r","q8r"],
+		  ["th1r","q8r"],
+		  ["th3r","f9rr"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //tailgate
+            {"group":"acmrivian_tunnel_hatch_R"},
+			{"triangleType":"NONCOLLIDABLE"},
+            {"dragCoef":8},
+            ["th6r","th2r","th1r"],
+            ["th2r","th4r","th3r"],
+            ["th4r","th2r","th6r"],
+            ["th5r","th4r","th6r"],
+			{"triangleType":"NORMALTYPE"},
+			{"group":""},
+        
+    ],
+},
+}

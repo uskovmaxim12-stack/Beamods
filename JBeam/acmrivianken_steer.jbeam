@@ -1,0 +1,15 @@
+{
+"acmrivian_steer": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Steering Wheel",
+        "value":550,
+    },
+    "slotType" : "acmrivian_steer",
+    "props": [
+        ["func",     "mesh",           "idRef:","idX:","idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "acmrivian_steer", "int_strw","dsh2l","dsh2r",        {"x":-5, "y":90, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+    ],
+},
+}

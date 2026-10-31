@@ -1,0 +1,11 @@
+{
+"bindings" :   [
+    {"control":"☀", "action":"text"},
+    {"control": "shift g", "action": "min_rideHeight"},
+	{"control": "g", "action": "default_rideHeight"},
+    {"control": "y","action": "max_rideHeight"}
+	
+    {"control": "shift a","action": "autohold_button"}
+    {"control": "o","action": "dashboard_night_mode"}
+],
+},

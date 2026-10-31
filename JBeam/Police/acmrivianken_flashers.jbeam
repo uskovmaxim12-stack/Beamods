@@ -1,0 +1,226 @@
+{
+"acmrivian_flashers_redblue": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Flashers",
+        "value":1400,
+    },
+    "slotType" : "acmrivian_flashers_redblue",
+    "flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		{"deformGroup":"frontflashers_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_bumper_F", ["acmrivian_bumper_F"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"mirrorsignal_R_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},	
+        ["acmrivian_flashers_mirror_R", ["acmrivian_mirror_R"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_mirror_L", ["acmrivian_mirror_L"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"lower_tailgate_lights_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_lowergate", ["acmrivian_tailgate_lower"]],
+		{"deformGroup":""},
+    ],
+	"props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightRange":8,
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        {
+            "lightBrightness":3.0,
+            "lightColor":{"r":455, "g":0, "b":0, "a":2500}
+        },
+        //red
+		["F2L_red"    , "SPOTLIGHT"        , "fb3","fb3l","fb2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-5, "y":0, "z":180},"baseTranslationGlobal":{"x":0.379,"y":-2.118,"z":0.485},"deformGroup":"frontflashers_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "mi4l","mi3l","mi2l", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-25, "y":0, "z":150},"baseTranslationGlobal":{"x":0.988,"y":-0.538,"z":1.123},"deformGroup":"mirrorsignal_L_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "lt1","lt1r", "lt2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-30},"baseTranslationGlobal":{"x":-0.337,"y":2.784,"z":0.736},"deformGroup":"lower_tailgate_lights_break"}],
+		{
+            "lightBrightness":3.0,
+            "lightColor":{"r":0, "g":0, "b":455, "a":2500}
+        },
+		//blue
+		["F2R_blue"    , "SPOTLIGHT"        , "fb3","fb3l","fb2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-5, "y":0, "z":180},"baseTranslationGlobal":{"x":-0.379,"y":-2.118,"z":0.485},"deformGroup":"frontflashers_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "mi4r","mi3r","mi2r", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-25, "y":0, "z":210},"baseTranslationGlobal":{"x":-0.988,"y":-0.538,"z":1.123},"deformGroup":"mirrorsignal_R_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "lt1","lt1r", "lt2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":30},"baseTranslationGlobal":{"x":0.337,"y":2.784,"z":0.736},"deformGroup":"lower_tailgate_lights_break"}],
+    ],
+},
+"acmrivian_flashers_blue": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Flashers",
+        "value":1400,
+    },
+    "slotType" : "acmrivian_flashers_blue",
+    "flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		{"deformGroup":"frontflashers_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_bumper_F", ["acmrivian_bumper_F"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"mirrorsignal_R_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_mirror_R", ["acmrivian_mirror_R"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_mirror_L", ["acmrivian_mirror_L"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"lower_tailgate_lights_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_lowergate", ["acmrivian_tailgate_lower"]],
+		{"deformGroup":""},
+    ],
+	"props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightRange":8,
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        {
+            "lightBrightness":3.0,
+            "lightColor":{"r":0, "g":0, "b":455, "a":2500}
+        },
+        //red
+		["F2L_red"    , "SPOTLIGHT"        , "fb3","fb3l","fb2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-5, "y":0, "z":180},"baseTranslationGlobal":{"x":0.379,"y":-2.118,"z":0.485},"deformGroup":"frontflashers_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "mi4l","mi3l","mi2l", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-25, "y":0, "z":150},"baseTranslationGlobal":{"x":0.988,"y":-0.538,"z":1.123},"deformGroup":"mirrorsignal_L_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "lt1","lt1r", "lt2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-30},"baseTranslationGlobal":{"x":-0.337,"y":2.784,"z":0.736},"deformGroup":"lower_tailgate_lights_break"}],
+		{
+            "lightBrightness":3.0,
+            "lightColor":{"r":0, "g":0, "b":455, "a":2500}
+        },
+		//blue
+		["F2R_blue"    , "SPOTLIGHT"        , "fb3","fb3l","fb2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-5, "y":0, "z":180},"baseTranslationGlobal":{"x":-0.379,"y":-2.118,"z":0.485},"deformGroup":"frontflashers_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "mi4r","mi3r","mi2r", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-25, "y":0, "z":210},"baseTranslationGlobal":{"x":-0.988,"y":-0.538,"z":1.123},"deformGroup":"mirrorsignal_R_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "lt1","lt1r", "lt2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":30},"baseTranslationGlobal":{"x":0.337,"y":2.784,"z":0.736},"deformGroup":"lower_tailgate_lights_break"}],
+    ],
+},
+"acmrivian_flashers_red": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Flashers",
+        "value":1400,
+    },
+    "slotType" : "acmrivian_flashers_red",
+    "flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		{"deformGroup":"frontflashers_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_bumper_F", ["acmrivian_bumper_F"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"mirrorsignal_R_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_mirror_R", ["acmrivian_mirror_R"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_mirror_L", ["acmrivian_mirror_L"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"lower_tailgate_lights_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_lowergate", ["acmrivian_tailgate_lower"]],
+		{"deformGroup":""},
+    ],
+	"props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightRange":8,
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        {
+            "lightBrightness":3.0,
+            "lightColor":{"r":455, "g":0, "b":0, "a":2500}
+        },
+        //red
+		["F2L_red"    , "SPOTLIGHT"        , "fb3","fb3l","fb2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-5, "y":0, "z":180},"baseTranslationGlobal":{"x":0.379,"y":-2.118,"z":0.485},"deformGroup":"frontflashers_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "mi4l","mi3l","mi2l", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-25, "y":0, "z":150},"baseTranslationGlobal":{"x":0.988,"y":-0.538,"z":1.123},"deformGroup":"mirrorsignal_L_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "lt1","lt1r", "lt2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-30},"baseTranslationGlobal":{"x":-0.337,"y":2.784,"z":0.736},"deformGroup":"lower_tailgate_lights_break"}],
+		{
+            "lightBrightness":3.0,
+            "lightColor":{"r":455, "g":0, "b":0, "a":2500}
+        },
+		//blue
+		["F2R_blue"    , "SPOTLIGHT"        , "fb3","fb3l","fb2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-5, "y":0, "z":180},"baseTranslationGlobal":{"x":-0.379,"y":-2.118,"z":0.485},"deformGroup":"frontflashers_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "mi4r","mi3r","mi2r", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-25, "y":0, "z":210},"baseTranslationGlobal":{"x":-0.988,"y":-0.538,"z":1.123},"deformGroup":"mirrorsignal_R_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "lt1","lt1r", "lt2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":30},"baseTranslationGlobal":{"x":0.337,"y":2.784,"z":0.736},"deformGroup":"lower_tailgate_lights_break"}],
+    ],
+},
+"acmrivian_flashers_amber": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Flashers",
+        "value":1400,
+    },
+    "slotType" : "acmrivian_flashers_amber",
+    "flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		{"deformGroup":"frontflashers_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_bumper_F", ["acmrivian_bumper_F"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"mirrorsignal_R_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_mirror_R", ["acmrivian_mirror_R"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"doorglass_FL_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_mirror_L", ["acmrivian_mirror_L"]],
+		{"deformGroup":""},
+		
+		{"deformGroup":"lower_tailgate_lights_break", "deformMaterialBase":"acmrivian_lightbar_whelen_legacy", "deformMaterialDamaged":""},
+        ["acmrivian_flashers_lowergate", ["acmrivian_tailgate_lower"]],
+		{"deformGroup":""},
+    ],
+	"props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightRange":8,
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        {
+            "lightBrightness":3.0,
+            "lightColor":{"r":455, "g":240, "b":0, "a":2500}
+        },
+        //red
+		["F2L_red"    , "SPOTLIGHT"        , "fb3","fb3l","fb2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-5, "y":0, "z":180},"baseTranslationGlobal":{"x":0.379,"y":-2.118,"z":0.485},"deformGroup":"frontflashers_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "mi4l","mi3l","mi2l", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-25, "y":0, "z":150},"baseTranslationGlobal":{"x":0.988,"y":-0.538,"z":1.123},"deformGroup":"mirrorsignal_L_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "lt1","lt1r", "lt2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-30},"baseTranslationGlobal":{"x":-0.337,"y":2.784,"z":0.736},"deformGroup":"lower_tailgate_lights_break"}],
+		{
+            "lightBrightness":3.0,
+            "lightColor":{"r":455, "g":240, "b":0, "a":2500}
+        },
+		//blue
+		["F2R_blue"    , "SPOTLIGHT"        , "fb3","fb3l","fb2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-5, "y":0, "z":180},"baseTranslationGlobal":{"x":-0.379,"y":-2.118,"z":0.485},"deformGroup":"frontflashers_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "mi4r","mi3r","mi2r", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-25, "y":0, "z":210},"baseTranslationGlobal":{"x":-0.988,"y":-0.538,"z":1.123},"deformGroup":"mirrorsignal_R_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "lt1","lt1r", "lt2", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":30},"baseTranslationGlobal":{"x":0.337,"y":2.784,"z":0.736},"deformGroup":"lower_tailgate_lights_break"}],
+    ],
+},
+}

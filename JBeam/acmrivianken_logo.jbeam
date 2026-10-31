@@ -1,0 +1,259 @@
+{
+"acmrivian_hood_logo": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Hood Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_hood_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_hood_logo", ["acmrivian_hood"]],
+    ],
+},
+"acmrivian_body_logo": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Body Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_body_logo", ["acmrivian_body"]],
+    ],
+},
+"acmrivian_door_FL_logo": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Front Left Door Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_door_FL_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_door_FL_logo", ["acmrivian_door_FL"]],
+         ["acmrivian_door_FL_logo_side", ["acmrivian_door_FL"]],
+    ],
+},
+"acmrivian_door_FR_logo": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Front Right Door Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_door_FR_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_door_FR_logo", ["acmrivian_door_FR"]],
+         ["acmrivian_door_FR_logo_side", ["acmrivian_door_FR"]],
+    ],
+},
+"acmrivian_tailgate_logo": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Tailgate Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tailgate_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tailgate_logo", ["acmrivian_tailgate"]],
+    ],
+},
+"acmrivian_lowergate_lettering_r1s": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Lowergate R1S Lettering",
+        "value":340,
+    },
+    "slotType" : "acmrivian_lowergate_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_lowergate_lettering_r1s", ["acmrivian_tailgate_lower"]],
+         ["acmrivian_lowergate_lettering_r1s_middle_line", ["acmrivian_tailgate_lower"]],
+    ],
+},
+
+"acmrivian_tailgate_pickup_logo": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Tailgate Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tailgate_pickup_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tailgate_pickup_logo", ["acmrivian_tailgate"]],
+    ],
+},
+"acmrivian_tailgate_pickup_lettering_r1t": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Lowergate R1T Lettering",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tailgate_pickup_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tailgate_pickup_lettering_r1t", ["acmrivian_tailgate"]],
+         ["acmrivian_tailgate_pickup_lettering_r1t_middle_line", ["acmrivian_tailgate"]],
+    ],
+},
+
+"acmrivian_hood_logo_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Hood Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_hood_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_hood_logo", ["acmrivian_hood"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+    ],
+},
+"acmrivian_body_logo_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Body Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_body_logo", ["acmrivian_body"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+    ],
+},
+"acmrivian_door_FL_logo_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Front Left Door Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_door_FL_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_door_FL_logo", ["acmrivian_door_FL"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_FL_logo_side", ["acmrivian_door_FL"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+    ],
+},
+"acmrivian_door_FR_logo_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Front Right Door Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_door_FR_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_door_FR_logo", ["acmrivian_door_FR"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_FR_logo_side", ["acmrivian_door_FR"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+    ],
+},
+"acmrivian_tailgate_logo_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Tailgate Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tailgate_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tailgate_logo", ["acmrivian_tailgate"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+    ],
+},
+"acmrivian_lowergate_lettering_r1s_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Lowergate R1S Lettering",
+        "value":340,
+    },
+    "slotType" : "acmrivian_lowergate_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_lowergate_lettering_r1s", ["acmrivian_tailgate_lower"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+         ["acmrivian_lowergate_lettering_r1s_middle_line", ["acmrivian_tailgate_lower"],[], {"materialOverride":[["acmrivian_colors","acmrivian_chromeblack"]]}],
+    ],
+},
+
+"acmrivian_tailgate_pickup_logo_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Tailgate Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tailgate_pickup_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tailgate_pickup_logo", ["acmrivian_tailgate"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+    ],
+},
+"acmrivian_tailgate_pickup_lettering_r1t_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Lowergate R1T Lettering",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tailgate_pickup_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tailgate_pickup_lettering_r1t", ["acmrivian_tailgate"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+         ["acmrivian_tailgate_pickup_lettering_r1t_middle_line", ["acmrivian_tailgate"],[], {"materialOverride":[["acmrivian_colors","acmrivian_chromeblack"]]}],
+    ],
+},
+
+"acmrivian_door_FL_logo_miami": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Miami-Edition Front Left Door Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_door_FL_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_door_FL_logo", ["acmrivian_door_FL"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_FL_logo_side", ["acmrivian_door_FL"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chrome_purple"]]}],
+    ],
+},
+"acmrivian_door_FR_logo_miami": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Miami-Edition Front Right Door Logo",
+        "value":340,
+    },
+    "slotType" : "acmrivian_door_FR_logo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_door_FR_logo", ["acmrivian_door_FR"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_FR_logo_side", ["acmrivian_door_FR"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chrome_purple"]]}],
+    ],
+},
+"acmrivian_lowergate_lettering_r1s_miami": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Miami-Edition Lowergate R1S Lettering",
+        "value":340,
+    },
+    "slotType" : "acmrivian_lowergate_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_lowergate_lettering_r1s", ["acmrivian_tailgate_lower"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+         ["acmrivian_lowergate_lettering_r1s_middle_line", ["acmrivian_tailgate_lower"],[], {"materialOverride":[["acmrivian_colors","acmrivian_chrome_purple"]]}],
+    ],
+},
+"acmrivian_tailgate_pickup_lettering_r1t_miami": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Miami-Edition Lowergate R1T Lettering",
+        "value":340,
+    },
+    "slotType" : "acmrivian_tailgate_pickup_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_tailgate_pickup_lettering_r1t", ["acmrivian_tailgate"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+         ["acmrivian_tailgate_pickup_lettering_r1t_middle_line", ["acmrivian_tailgate"],[], {"materialOverride":[["acmrivian_colors","acmrivian_chrome_purple"]]}],
+    ],
+},
+
+}

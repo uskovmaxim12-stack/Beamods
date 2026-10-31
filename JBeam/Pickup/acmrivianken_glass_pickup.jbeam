@@ -1,0 +1,148 @@
+{
+"acmrivian_doorglass_RR_pickup": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Rear Right Door Glass",
+        "value":50,
+    },
+    "slotType" : "acmrivian_doorglass_RR_pickup",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"deformGroup":"doorglass_RR_break", "deformMaterialBase":"acmrivian_glass_pickup", "deformMaterialDamaged":"acmrivian_glass_pickup_dmg"},
+         ["acmrivian_doorglass_RR_pickup", ["acmrivian_door_RR"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound7", "deformVolume":0.7}],
+         {"deformGroup":""},
+		 
+		 {"deformGroup":"doorglass_RR_break", "deformMaterialBase":"acmrivian_glass_pickup_int", "deformMaterialDamaged":"acmrivian_glass_pickup_int_dmg"},
+         ["acmrivian_doorglass_RR_pickup_int", ["acmrivian_door_RR"]],
+         {"deformGroup":""},
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.04
+    }
+},
+"acmrivian_doorglass_RL_pickup": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Rear Left Door Glass",
+        "value":50,
+    },
+    "slotType" : "acmrivian_doorglass_RL_pickup",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"deformGroup":"doorglass_RL_break", "deformMaterialBase":"acmrivian_glass_pickup", "deformMaterialDamaged":"acmrivian_glass_pickup_dmg"},
+         ["acmrivian_doorglass_RL_pickup", ["acmrivian_door_RL"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound8", "deformVolume":0.7}],
+         {"deformGroup":""},
+		 
+		 {"deformGroup":"doorglass_RL_break", "deformMaterialBase":"acmrivian_glass_pickup_int", "deformMaterialDamaged":"acmrivian_glass_pickup_int_dmg"},
+         ["acmrivian_doorglass_RL_pickup_int", ["acmrivian_door_RL"]],
+         {"deformGroup":""},
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.04
+    }
+},
+"acmrivian_backlight": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Backlight Glass",
+        "value":80,
+    },
+    "slotType" : "acmrivian_backlight",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"deformGroup":"backlight_break", "deformMaterialBase":"acmrivian_glass_pickup", "deformMaterialDamaged":"acmrivian_glass_pickup_dmg"},
+         ["acmrivian_backlight", ["acmrivian_body"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound10", "deformVolume":0.8}],
+         {"deformGroup":""},
+		 
+		 {"deformGroup":"backlight_break", "deformMaterialBase":"acmrivian_glass_pickup_int", "deformMaterialDamaged":"acmrivian_glass_pickup_int_dmg"},
+         ["acmrivian_backlight_int", ["acmrivian_body"]],
+         {"deformGroup":""},
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.04
+    }
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
+          //brittle rear glass
+          {"beamSpring":1201000,"beamDamp":100},
+          {"beamDeform":5000,"beamStrength":10000},
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          {"deformGroup":"backlight_break", "deformationTriggerRatio":0.01},
+          {"deformLimitExpansion":""},
+          ["rf4l", "bw1l"],
+          ["rf4", "bw1l"],
+		  
+          ["rf4r", "bw1r"],
+          ["rf4", "bw1r"],
+
+          {"deformGroup":""},
+          {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+"acmrivian_roofglass_pickup": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Panoramic Roof Glass",
+        "value":520,
+    },
+    "slotType" : "acmrivian_roofglass_pickup",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"deformGroup":"roofglass_break", "deformMaterialBase":"acmrivian_glass_pickup", "deformMaterialDamaged":"acmrivian_glass_pickup_dmg"},
+         ["acmrivian_panoramic_glass_pickup", ["acmrivian_body"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>impact_glass_windscreen_01", "deformVolume":0.7}],
+
+         {"deformGroup":"roofglass_break", "deformMaterialBase":"acmrivian_glass_pickup_int", "deformMaterialDamaged":"acmrivian_glass_pickup_int_dmg"},
+         ["acmrivian_panoramic_glass_pickup_int", ["acmrivian_body"]],
+         {"deformGroup":""},
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.10
+    }
+    "nodes": [
+         //redefine roof node heavier to simulate roof weight
+         ["id", "posX", "posY", "posZ"],
+         {"group":"acmrivian_body"},
+         {"selfCollision":true},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.85},
+         ["rf2r",-0.6416,0.4339,1.584],
+         ["rf2", 0.0, 0.4339, 1.6094, {"nodeWeight":5.85}],
+         ["rf2l",0.6416,0.4339,1.584],
+
+         ["rf3",0.0,0.9364,1.6084, {"nodeWeight":3.85}],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
+          //brittle rear glass
+          {"beamSpring":1201000,"beamDamp":100},
+          {"beamDeform":3600,"beamStrength":4000},
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          {"breakGroup":"roofglass_break"},
+          {"deformGroup":"roofglass_break_break", "deformationTriggerRatio":0.001},
+          {"deformLimitExpansion":""},
+          ["rf3r", "rf2l"],
+          ["rf2l", "rf1r"],
+          ["rf2r", "rf1l"],
+          ["rf2r", "rf3l"],
+          ["rf3l", "rf1r"],
+          ["rf3r", "rf1l"],
+          {"beamSpring":801000,"beamDamp":100},
+          ["rf2", "p6r"],
+          ["rf2", "p5r"],
+          ["rf2", "p6l"],
+          ["rf2", "p5l"],
+          ["rf2", "p2rr"],
+          ["rf2", "p2ll"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+}

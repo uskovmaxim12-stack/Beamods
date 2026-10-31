@@ -1,0 +1,356 @@
+{
+"acmrivian_gauges": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Gauges",
+        "value":200,
+    },
+    "slotType" : "acmrivian_gauges",
+    "controller": [
+        ["fileName"],
+		["screenInput", {
+			"triggerConfigPath": "vehicles/acmrivian/navi_screen/",
+			"drawBoxes": false
+		}],
+		
+		["navigator_acmrivian", {
+		"screenMaterialName": "@acmrivian_navi",
+		"screenInputId": "acmrivian_navi",
+		"name": "acmrivian_navi",
+		"htmlFilePath": "local://local/vehicles/acmrivian/navi_screen/navi_screen.html",
+		"textureWidth": 1024,
+		"textureHeight": 543,
+		"textureFPS": 30,
+		
+		"displayData": {
+			"electrics": [
+			"rearCam",
+			"gear",
+			"gearIndex",
+			"dashboard_night_mode",
+			"ignitionLevel",
+			"fuel"
+			],
+			"customModules": [
+			["gauges/customModules/environmentData", "time"]
+			],
+			"powertrain": []
+		},
+		"hitboxes": {
+			"hitbox_rearcamera": {
+			"controller": "rearCam",
+			"function": "setRearCam",
+			"value": true
+			},
+			"hitbox_navi": {
+			"controller": "rearCam",
+			"function": "setRearCam",
+			"value": false
+			},
+			"hitbox_suspension_down": {
+			"controller": "air_suspension",
+			"function": "suspensionDown",
+			"value": true
+			},
+			"hitbox_suspension_up": {
+			"controller": "air_suspension",
+			"function": "suspensionUp",
+			"value": true
+			},
+			"hitbox_suspension_auto": {
+			"controller": "air_suspension",
+			"function": "suspensionAuto",
+			"value": true
+			},
+			"hitbox_offroad": {
+			"controller": "navigator_acmrivian",
+			"function": "setDseMode",
+			"value": "offroad"
+			},
+			"hitbox_dse_off": {
+			"controller": "navigator_acmrivian",
+			"function": "setDseMode",
+			"value": "off"
+			},
+			"hitbox_sport": {
+			"controller": "navigator_acmrivian",
+			"function": "setDseMode",
+			"value": "sport"
+			},
+			"hitbox_conserve": {
+			"controller": "navigator_acmrivian",
+			"function": "setDseMode",
+			"value": "conserve"
+			},
+			"hitbox_powertrain": {
+			"controller": "navigator_acmrivian",
+			"function": "noop",
+			"value": true
+			},
+			"hitbox_music": {
+			"controller": "navigator_acmrivian",
+			"function": "noop",
+			"value": true
+			},
+		}
+		}],
+		
+        ["genericGauges_acmrivian", {"name":"gauge" }],
+        ["gauges/customModules/environmentData"],
+        ["gauges/customModules/electricMotorData"],
+		["gauges/customModules/tireData"],
+		["odometer_acmrivian"],
+
+		["rearCam", {
+            "texTargetName":"@acmrivian_reversecam",
+            "camNodes":{"idRef": "t4", "idX":"t5", "idY":"t4r"},
+
+            "res": [256, 128],
+            "clip": [0.1, 100],
+            "fov": 90,
+
+            "rotOffset":{"x":0.0, "y":0.5, "z":-0.2},
+            "posOffset":{"x":0, "y":0.0, "z":0.0},
+        }],
+		["reverseCamOverlay", {"materialName":"@acmrivian_reversecam_overlay"}],
+    ],
+	"glowMap":{
+		"acmrivian_reversecam":{"simpleFunction":{"ignitionLevel":0.1, "rearCam":0.4}, "off":"invis", "on":"invis", "on_intense":"acmrivian_reversecam"},
+		"acmrivian_reversecam_overlay":{"simpleFunction":{"ignitionLevel":0.1, "rearCam":0.4}, "off":"invis", "on":"invis", "on_intense":"acmrivian_reversecam_overlay"},
+    },
+	"actionsEnabled": [
+		["id"],
+		["dashboard_night_mode"]
+		["autohold_button"]
+	],
+    "gauge": {
+        "configuration": {
+            "materialName": "@acmrivian_gauges_screen"
+            "htmlPath": "local://local/vehicles/acmrivian/gauges_screen/gauges_screen.html"
+            "displayWidth":1024
+            "displayHeight":512
+        }
+        "displayData": {
+            "electrics": [
+                "signal_L",
+                "signal_R",
+				
+                "autohold",
+                "esp",
+                "abs",
+                "highbeam",
+                "lowbeam",
+                "parkingbrake",
+                "lowfuel",
+                "gear",
+                "gearIndex",
+                "lights",
+                "fuel",
+                "wheelspeed",
+                "airspeed",
+                "acmrivianken_odometer",
+                "cruiseControlActive",
+                "dashboard_night_mode",
+                "screen_brightness",
+            ]
+            "customModules": [
+                ["moduleName", "property"]
+				["electricMotorData", "currentPower"],
+                ["electricMotorData", "remainingRange"],
+                ["electricMotorData", "consumptionGraph"],
+                ["electricMotorData", "powerDisplay"],
+                ["environmentData", "temperatureEnv",]
+                ["environmentData", "time",]
+            ]
+        }
+    },
+	"flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            {"deformGroup":"display_break", "deformMaterialBase":"acmrivian_gauges_screen", "deformMaterialDamaged":"screen_off"},
+            ["acmrivian_gauges_screen", ["acmrivian_dash"]],
+            {"deformGroup":""},
+			
+			{"deformGroup":"display_break", "deformMaterialBase":"acmrivian_reversecam", "deformMaterialDamaged":"invis"},
+            ["acmrivian_reversecam", ["acmrivian_dash"]],
+			["acmrivian_reversecam", ["acmrivian_dash"], [],{"materialOverride":[["acmrivian_reversecam","acmrivian_reversecam_overlay"]], "pos":{"x": 0.0, "y":0.001, "z":0.0}}],
+			{"deformGroup":""},
+    ],
+},
+"acmrivian_gauges_pickup": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Gauges",
+        "value":200,
+    },
+    "slotType" : "acmrivian_gauges_pickup",
+    "controller": [
+        ["fileName"],
+		["screenInput", {
+			"triggerConfigPath": "vehicles/acmrivian/navi_screen_pickup/",
+			"drawBoxes": false
+		}],
+		
+		["navigator_acmrivian", {
+		"screenMaterialName": "@acmrivian_navi",
+		"screenInputId": "acmrivian_navi",
+		"name": "acmrivian_navi",
+		"htmlFilePath": "local://local/vehicles/acmrivian/navi_screen/navi_screen.html",
+		"textureWidth": 1024,
+		"textureHeight": 543,
+		"textureFPS": 30,
+		
+		"displayData": {
+			"electrics": [
+			"rearCam",
+			"gear",
+			"gearIndex",
+			"dashboard_night_mode",
+			"ignitionLevel",
+			"fuel"
+			],
+			"customModules": [
+			["gauges/customModules/environmentData", "time"]
+			],
+			"powertrain": []
+		},
+		"hitboxes": {
+			"hitbox_rearcamera": {
+			"controller": "rearCam",
+			"function": "setRearCam",
+			"value": true
+			},
+			"hitbox_navi": {
+			"controller": "rearCam",
+			"function": "setRearCam",
+			"value": false
+			},
+			"hitbox_suspension_down": {
+			"controller": "air_suspension",
+			"function": "suspensionDown",
+			"value": true
+			},
+			"hitbox_suspension_up": {
+			"controller": "air_suspension",
+			"function": "suspensionUp",
+			"value": true
+			},
+			"hitbox_suspension_auto": {
+			"controller": "air_suspension",
+			"function": "suspensionAuto",
+			"value": true
+			},
+			"hitbox_offroad": {
+			"controller": "navigator_acmrivian",
+			"function": "setDseMode",
+			"value": "offroad"
+			},
+			"hitbox_dse_off": {
+			"controller": "navigator_acmrivian",
+			"function": "setDseMode",
+			"value": "off"
+			},
+			"hitbox_sport": {
+			"controller": "navigator_acmrivian",
+			"function": "setDseMode",
+			"value": "sport"
+			},
+			"hitbox_conserve": {
+			"controller": "navigator_acmrivian",
+			"function": "setDseMode",
+			"value": "conserve"
+			},
+			"hitbox_powertrain": {
+			"controller": "navigator_acmrivian",
+			"function": "noop",
+			"value": true
+			},
+			"hitbox_music": {
+			"controller": "navigator_acmrivian",
+			"function": "noop",
+			"value": true
+			},
+		}
+		}],
+		
+        ["genericGauges_acmrivian", {"name":"gauge" }],
+        ["gauges/customModules/environmentData"],
+        ["gauges/customModules/electricMotorData"],
+		["gauges/customModules/tireData"],
+		["odometer_acmrivian"],
+
+		["rearCam", {
+            "texTargetName":"@acmrivian_reversecam",
+            "camNodes":{"idRef": "t1", "idX":"t2", "idY":"t1r"},
+
+            "res": [256, 128],
+            "clip": [0.1, 100],
+            "fov": 90,
+
+            "rotOffset":{"x":0.0, "y":0.5, "z":-0.2},
+            "posOffset":{"x":0, "y":0.0, "z":0.0},
+        }],
+		["reverseCamOverlay", {"materialName":"@acmrivian_reversecam_overlay"}],
+    ],
+	"glowMap":{
+		"acmrivian_reversecam":{"simpleFunction":{"ignitionLevel":0.1, "rearCam":0.4}, "off":"invis", "on":"invis", "on_intense":"acmrivian_reversecam"},
+		"acmrivian_reversecam_overlay":{"simpleFunction":{"ignitionLevel":0.1, "rearCam":0.4}, "off":"invis", "on":"invis", "on_intense":"acmrivian_reversecam_overlay"},
+    },
+	"actionsEnabled": [
+		["id"],
+		["dashboard_night_mode"]
+		["autohold_button"]
+	],
+    "gauge": {
+        "configuration": {
+            "materialName": "@acmrivian_gauges_screen"
+            "htmlPath": "local://local/vehicles/acmrivian/gauges_screen/gauges_screen.html"
+            "displayWidth":1024
+            "displayHeight":512
+        }
+        "displayData": {
+            "electrics": [
+                "signal_L",
+                "signal_R",
+				
+                "autohold",
+                "esp",
+                "abs",
+                "highbeam",
+                "lowbeam",
+                "parkingbrake",
+                "lowfuel",
+                "gear",
+                "gearIndex",
+                "lights",
+                "fuel",
+                "wheelspeed",
+                "airspeed",
+                "acmrivianken_odometer",
+                "cruiseControlActive",
+                "dashboard_night_mode",
+                "screen_brightness",
+            ]
+            "customModules": [
+                ["moduleName", "property"]
+				["electricMotorData", "currentPower"],
+                ["electricMotorData", "remainingRange"],
+                ["electricMotorData", "consumptionGraph"],
+                ["electricMotorData", "powerDisplay"],
+                ["environmentData", "temperatureEnv",]
+                ["environmentData", "time",]
+            ]
+        }
+    },
+	"flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            {"deformGroup":"display_break", "deformMaterialBase":"acmrivian_gauges_screen", "deformMaterialDamaged":"screen_off"},
+            ["acmrivian_gauges_screen", ["acmrivian_dash"]],
+            {"deformGroup":""},
+			
+			{"deformGroup":"display_break", "deformMaterialBase":"acmrivian_reversecam", "deformMaterialDamaged":"invis"},
+            ["acmrivian_reversecam", ["acmrivian_dash"]],
+			["acmrivian_reversecam", ["acmrivian_dash"], [],{"materialOverride":[["acmrivian_reversecam","acmrivian_reversecam_overlay"]], "pos":{"x": 0.0, "y":0.001, "z":0.0}}],
+			{"deformGroup":""},
+    ],
+},
+}

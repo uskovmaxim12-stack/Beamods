@@ -1,0 +1,23 @@
+{
+  // Reference planes - define coordinate system origins for your triggers and boxes
+  // Think of them as arbitrary anchor points in 3D space - wherever you put one,
+  // that becomes (0, 0, 0) for anything using that plane's ID
+  // You can stick them anywhere! On screens, buttons, the console, whatever
+  "$configType": "referencePlane",
+
+  "planes": [
+    {
+      "id": "0", // Leave blank if this is your only plane, otherwise "0" for the main one to prevent issues with defaults
+      "pos": {
+        "x": 0.178, // Left/right from vehicle center (positive = left)
+        "y": -0.055, // Forward/back (positive = towards rear)
+        "z": 0.807 // Up/down from ground (positive = up)
+      },
+      "rot": {
+        "x": 73.25, // Pitch - tilts up/down (90° = vertical/facing forward)
+        "y": 0, // Yaw - rotates left/right
+        "z": 0 // Roll - tilts sideways (accounts for angled dash)
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<html lang="en" ng-app="gaugesScreen">
+<head>
+    <meta charset="UTF-8">
+    <script src="/ui/lib/ext/vue3/vue.global.prod.js"></script>
+    <script src="/ui/lib/ext/tiny-emitter/tinyemitter.js"></script>
+    <script type="module" src="/ui/lib/int/vueService_mod.js"></script>
+    <script src="/ui/lib/ext/angular/angular.js"></script>
+    <script src="/ui/lib/ext/hu.js"></script>
+	
+    <script src="gauges_screen.js"></script>
+
+    <script src="/ui/ui-vue/src/services/navigator-class.js"></script>
+<link rel="stylesheet" href="gauges_screen.css">
+</head>
+
+<body ng-controller="GaugesScreenController as gaugeCtrl" style="background-color: black; margin: 0; padding: 0; overflow: hidden;">
+
+  <!-- Контейнер для карты -->
+  <div id="navi-container" style="position:absolute; width:100%; height:100%; z-index:1;">
+    <div id="mapContainer" style="width: 100%; height: 100%; overflow: visible;">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;"></svg>
+    </div>
+  </div>
+  
+  <div id="gaugesRoot" style="position:absolute; width:100%; height:100%; z-index:2;" ng-include="'gauges_screen.svg'" onload="gaugeCtrl.onSVGLoaded()"></div>
+</body>
+</html>

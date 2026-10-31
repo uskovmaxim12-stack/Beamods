@@ -1,0 +1,478 @@
+{
+"acmrivian_lightbar_glass_red_blue": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Red / Blue",
+        "value":2000,
+    },
+    "slotType" : "acmrivian_lightbar_glass",
+	"slots": [
+        ["type", "default", "description"],
+        ["acmrivian_flashers_redblue","acmrivian_flashers_redblue", "Flashers"],
+    ],
+	"glowMap":{
+	//LEFT RED
+        "acmrivian_policebar_F1L": {"simpleFunction":{"F1L_white":0.49, "F1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F2L": {"simpleFunction":{"F2L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F3L": {"simpleFunction":{"F3L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F4L": {"simpleFunction":{"F4L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F5L": {"simpleFunction":{"F5L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F6L": {"simpleFunction":{"F6L_white":0.49, "F6L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+		
+        "acmrivian_policebar_S1L": {"simpleFunction":{"S1L_white":0.49, "S1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+		
+        "acmrivian_policebar_R1L": {"simpleFunction":{"R1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R2L": {"simpleFunction":{"R2L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R3L": {"simpleFunction":{"R3L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R4L": {"simpleFunction":{"R4L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R5L": {"simpleFunction":{"R5L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R6L": {"simpleFunction":{"R6L_white":0.49, "R6L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+	//RIGHT BLUE
+		"acmrivian_policebar_F1R": {"simpleFunction":{"F1R_white":0.49, "F1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F2R": {"simpleFunction":{"F2R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F3R": {"simpleFunction":{"F3R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F4R": {"simpleFunction":{"F4R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F5R": {"simpleFunction":{"F5R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F6R": {"simpleFunction":{"F6R_white":0.49, "F6R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+		
+        "acmrivian_policebar_S1R": {"simpleFunction":{"S1R_white":0.49, "S1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+		
+        "acmrivian_policebar_R1R": {"simpleFunction":{"R1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R2R": {"simpleFunction":{"R2R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R3R": {"simpleFunction":{"R3R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R4R": {"simpleFunction":{"R4R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R5R": {"simpleFunction":{"R5R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R6R": {"simpleFunction":{"R6R_white":0.49, "R6R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+    },
+    "props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":100,
+            "lightRange":8,
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        {
+            "lightBrightness":0.6,
+            "lightColor":{"r":455, "g":0, "b":0, "a":2500}
+        },
+        //red LEFT
+        ["F1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal":{"x":0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":170},"baseTranslationGlobal":{"x":0.145,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F3L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":160},"baseTranslationGlobal":{"x":0.277,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F4L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":150},"baseTranslationGlobal":{"x":0.409,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F5L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":140},"baseTranslationGlobal":{"x":0.508,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":135},"baseTranslationGlobal":{"x":0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["S1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":35},"baseTranslationGlobal":{"x":0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["R1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":0}, "baseTranslationGlobal":{"x":0.046,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R2L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":10},"baseTranslationGlobal":{"x":0.145,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R3L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":20},"baseTranslationGlobal":{"x":0.277,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R4L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":30},"baseTranslationGlobal":{"x":0.409,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R5L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":40},"baseTranslationGlobal":{"x":0.508,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":45},"baseTranslationGlobal":{"x":0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+
+		{
+            "lightBrightness":0.6,
+            "lightColor":{"r":0, "g":0, "b":455, "a":2500}
+        },
+		//blue RIGHT
+        ["F1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal": {"x":-0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":190},"baseTranslationGlobal": {"x":-0.145,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F3R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":200},"baseTranslationGlobal": {"x":-0.277,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F4R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":210},"baseTranslationGlobal": {"x":-0.409,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F5R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":220},"baseTranslationGlobal": {"x":-0.508,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":-135},"baseTranslationGlobal":{"x":-0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																   
+        ["S1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":-35},"baseTranslationGlobal":{"x":-0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["R1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":0},"baseTranslationGlobal":  {"x":-0.046,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R2R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-10},"baseTranslationGlobal":{"x":-0.145,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R3R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-20},"baseTranslationGlobal":{"x":-0.277,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R4R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-30},"baseTranslationGlobal":{"x":-0.409,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R5R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-40},"baseTranslationGlobal":{"x":-0.508,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-45},"baseTranslationGlobal":{"x":-0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		
+		{
+            "lightBrightness":1.5,
+            "lightColor":{"r":455, "g":455, "b":455, "a":2500}
+			"lightInnerAngle":0,
+            "lightOuterAngle":150,
+            "lightRange":12,
+		},
+		//white
+		["F1L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal":{"x":0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+		["F6L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":135},"baseTranslationGlobal":{"x":0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+		["R6L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":45},  "baseTranslationGlobal":{"x":0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		["S1L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":35}, "baseTranslationGlobal":{"x":0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+		
+		["F1R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180}, "baseTranslationGlobal":{"x":-0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":-135},"baseTranslationGlobal":{"x":-0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-45},  "baseTranslationGlobal":{"x":-0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		["S1R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":-35}, "baseTranslationGlobal":{"x":-0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+    ],
+},
+"acmrivian_lightbar_glass_red": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Red",
+        "value":2000,
+    },
+    "slotType" : "acmrivian_lightbar_glass",
+	"slots": [
+        ["type", "default", "description"],
+        ["acmrivian_flashers_red","acmrivian_flashers_red", "Flashers"],
+    ],
+	"glowMap":{
+	//LEFT RED
+        "acmrivian_policebar_F1L": {"simpleFunction":{"F1L_white":0.49, "F1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F2L": {"simpleFunction":{"F2L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F3L": {"simpleFunction":{"F3L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F4L": {"simpleFunction":{"F4L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F5L": {"simpleFunction":{"F5L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F6L": {"simpleFunction":{"F6L_white":0.49, "F6L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+		
+        "acmrivian_policebar_S1L": {"simpleFunction":{"S1L_white":0.49, "S1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+		
+        "acmrivian_policebar_R1L": {"simpleFunction":{"R1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R2L": {"simpleFunction":{"R2L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R3L": {"simpleFunction":{"R3L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R4L": {"simpleFunction":{"R4L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R5L": {"simpleFunction":{"R5L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R6L": {"simpleFunction":{"R6L_white":0.49, "R6L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+	//RIGHT BLUE
+		"acmrivian_policebar_F1R": {"simpleFunction":{"F1R_white":0.49, "F1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F2R": {"simpleFunction":{"F2R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F3R": {"simpleFunction":{"F3R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F4R": {"simpleFunction":{"F4R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F5R": {"simpleFunction":{"F5R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_F6R": {"simpleFunction":{"F6R_white":0.49, "F6R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+		
+        "acmrivian_policebar_S1R": {"simpleFunction":{"S1R_white":0.49, "S1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+		
+        "acmrivian_policebar_R1R": {"simpleFunction":{"R1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R2R": {"simpleFunction":{"R2R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R3R": {"simpleFunction":{"R3R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R4R": {"simpleFunction":{"R4R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R5R": {"simpleFunction":{"R5R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_red"},
+        "acmrivian_policebar_R6R": {"simpleFunction":{"R6R_white":0.49, "R6R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_red"},
+    },
+    "props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":100,
+            "lightRange":8,
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        {
+            "lightBrightness":0.6,
+            "lightColor":{"r":455, "g":0, "b":0, "a":2500}
+        },
+        //red LEFT
+        ["F1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal":{"x":0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":170},"baseTranslationGlobal":{"x":0.145,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F3L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":160},"baseTranslationGlobal":{"x":0.277,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F4L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":150},"baseTranslationGlobal":{"x":0.409,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F5L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":140},"baseTranslationGlobal":{"x":0.508,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":135},"baseTranslationGlobal":{"x":0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["S1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":35},"baseTranslationGlobal":{"x":0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["R1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":0}, "baseTranslationGlobal":{"x":0.046,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R2L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":10},"baseTranslationGlobal":{"x":0.145,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R3L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":20},"baseTranslationGlobal":{"x":0.277,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R4L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":30},"baseTranslationGlobal":{"x":0.409,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R5L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":40},"baseTranslationGlobal":{"x":0.508,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":45},"baseTranslationGlobal":{"x":0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+
+		{
+            "lightBrightness":0.6,
+            "lightColor":{"r":455, "g":0, "b":0, "a":2500}
+        },
+		//blue RIGHT
+        ["F1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal": {"x":-0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":190},"baseTranslationGlobal": {"x":-0.145,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F3R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":200},"baseTranslationGlobal": {"x":-0.277,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F4R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":210},"baseTranslationGlobal": {"x":-0.409,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F5R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":220},"baseTranslationGlobal": {"x":-0.508,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":-135},"baseTranslationGlobal":{"x":-0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																   
+        ["S1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":-35},"baseTranslationGlobal":{"x":-0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["R1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":0},"baseTranslationGlobal":  {"x":-0.046,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R2R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-10},"baseTranslationGlobal":{"x":-0.145,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R3R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-20},"baseTranslationGlobal":{"x":-0.277,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R4R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-30},"baseTranslationGlobal":{"x":-0.409,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R5R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-40},"baseTranslationGlobal":{"x":-0.508,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-45},"baseTranslationGlobal":{"x":-0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		
+		{
+            "lightBrightness":1.5,
+            "lightColor":{"r":455, "g":455, "b":455, "a":2500}
+			"lightInnerAngle":0,
+            "lightOuterAngle":150,
+            "lightRange":12,
+		},
+		//white
+		["F1L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal":{"x":0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+		["F6L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":135},"baseTranslationGlobal":{"x":0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+		["R6L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":45},  "baseTranslationGlobal":{"x":0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		["S1L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":35}, "baseTranslationGlobal":{"x":0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+		
+		["F1R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180}, "baseTranslationGlobal":{"x":-0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":-135},"baseTranslationGlobal":{"x":-0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-45},  "baseTranslationGlobal":{"x":-0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		["S1R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":-35}, "baseTranslationGlobal":{"x":-0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+    ],
+},
+"acmrivian_lightbar_glass_amber": {
+    "information":{
+        "authors":"ezbmz",
+        "name":"Amber",
+        "value":2000,
+    },
+    "slotType" : "acmrivian_lightbar_glass",
+	"slots": [
+        ["type", "default", "description"],
+        ["acmrivian_flashers_amber","acmrivian_flashers_amber", "Flashers"],
+    ],
+	"glowMap":{
+	//LEFT RED
+        "acmrivian_policebar_F1L": {"simpleFunction":{"F1L_white":0.49, "F1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F2L": {"simpleFunction":{"F2L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F3L": {"simpleFunction":{"F3L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F4L": {"simpleFunction":{"F4L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F5L": {"simpleFunction":{"F5L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F6L": {"simpleFunction":{"F6L_white":0.49, "F6L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_amber"},
+		
+        "acmrivian_policebar_S1L": {"simpleFunction":{"S1L_white":0.49, "S1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_amber"},
+		
+        "acmrivian_policebar_R1L": {"simpleFunction":{"R1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R2L": {"simpleFunction":{"R2L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R3L": {"simpleFunction":{"R3L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R4L": {"simpleFunction":{"R4L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R5L": {"simpleFunction":{"R5L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R6L": {"simpleFunction":{"R6L_white":0.49, "R6L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_amber"},
+	//RIGHT BLUE
+		"acmrivian_policebar_F1R": {"simpleFunction":{"F1R_white":0.49, "F1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F2R": {"simpleFunction":{"F2R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F3R": {"simpleFunction":{"F3R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F4R": {"simpleFunction":{"F4R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F5R": {"simpleFunction":{"F5R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_F6R": {"simpleFunction":{"F6R_white":0.49, "F6R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_amber"},
+		
+        "acmrivian_policebar_S1R": {"simpleFunction":{"S1R_white":0.49, "S1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_amber"},
+		
+        "acmrivian_policebar_R1R": {"simpleFunction":{"R1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R2R": {"simpleFunction":{"R2R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R3R": {"simpleFunction":{"R3R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R4R": {"simpleFunction":{"R4R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R5R": {"simpleFunction":{"R5R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_amber"},
+        "acmrivian_policebar_R6R": {"simpleFunction":{"R6R_white":0.49, "R6R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_amber"},
+    },
+    "props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":100,
+            "lightRange":8,
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        {
+            "lightBrightness":0.6,
+            "lightColor":{"r":455, "g":240, "b":0, "a":2500}
+        },
+        //red LEFT
+        ["F1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal":{"x":0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":170},"baseTranslationGlobal":{"x":0.145,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F3L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":160},"baseTranslationGlobal":{"x":0.277,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F4L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":150},"baseTranslationGlobal":{"x":0.409,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F5L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":140},"baseTranslationGlobal":{"x":0.508,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":135},"baseTranslationGlobal":{"x":0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["S1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":35},"baseTranslationGlobal":{"x":0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["R1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":0}, "baseTranslationGlobal":{"x":0.046,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R2L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":10},"baseTranslationGlobal":{"x":0.145,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R3L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":20},"baseTranslationGlobal":{"x":0.277,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R4L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":30},"baseTranslationGlobal":{"x":0.409,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R5L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":40},"baseTranslationGlobal":{"x":0.508,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":45},"baseTranslationGlobal":{"x":0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+
+		{
+            "lightBrightness":0.6,
+            "lightColor":{"r":455, "g":240, "b":0, "a":2500}
+        },
+		//blue RIGHT
+        ["F1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal": {"x":-0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":190},"baseTranslationGlobal": {"x":-0.145,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F3R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":200},"baseTranslationGlobal": {"x":-0.277,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F4R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":210},"baseTranslationGlobal": {"x":-0.409,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F5R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":220},"baseTranslationGlobal": {"x":-0.508,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":-135},"baseTranslationGlobal":{"x":-0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																   
+        ["S1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":-35},"baseTranslationGlobal":{"x":-0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["R1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":0},"baseTranslationGlobal":  {"x":-0.046,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R2R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-10},"baseTranslationGlobal":{"x":-0.145,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R3R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-20},"baseTranslationGlobal":{"x":-0.277,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R4R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-30},"baseTranslationGlobal":{"x":-0.409,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R5R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-40},"baseTranslationGlobal":{"x":-0.508,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-45},"baseTranslationGlobal":{"x":-0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		
+		{
+            "lightBrightness":1.5,
+            "lightColor":{"r":455, "g":455, "b":455, "a":2500}
+			"lightInnerAngle":0,
+            "lightOuterAngle":150,
+            "lightRange":12,
+		},
+		//white
+		["F1L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal":{"x":0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+		["F6L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":135},"baseTranslationGlobal":{"x":0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+		["R6L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":45},  "baseTranslationGlobal":{"x":0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		["S1L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":35}, "baseTranslationGlobal":{"x":0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+		
+		["F1R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180}, "baseTranslationGlobal":{"x":-0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":-135},"baseTranslationGlobal":{"x":-0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-45},  "baseTranslationGlobal":{"x":-0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		["S1R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":-35}, "baseTranslationGlobal":{"x":-0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+    ],
+},
+"acmrivian_lightbar_glass_blue": {
+    "information":{
+        "authors":"ezbmz",
+        "name":"Blue",
+        "value":2000,
+    },
+    "slotType" : "acmrivian_lightbar_glass",
+	"slots": [
+        ["type", "default", "description"],
+        ["acmrivian_flashers_blue","acmrivian_flashers_blue", "Flashers"],
+    ],
+	"glowMap":{
+	//LEFT RED
+        "acmrivian_policebar_F1L": {"simpleFunction":{"F1L_white":0.49, "F1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F2L": {"simpleFunction":{"F2L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F3L": {"simpleFunction":{"F3L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F4L": {"simpleFunction":{"F4L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F5L": {"simpleFunction":{"F5L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F6L": {"simpleFunction":{"F6L_white":0.49, "F6L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+		
+        "acmrivian_policebar_S1L": {"simpleFunction":{"S1L_white":0.49, "S1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+		
+        "acmrivian_policebar_R1L": {"simpleFunction":{"R1L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R2L": {"simpleFunction":{"R2L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R3L": {"simpleFunction":{"R3L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R4L": {"simpleFunction":{"R4L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R5L": {"simpleFunction":{"R5L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R6L": {"simpleFunction":{"R6L_white":0.49, "R6L_red":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+	//RIGHT BLUE
+		"acmrivian_policebar_F1R": {"simpleFunction":{"F1R_white":0.49, "F1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F2R": {"simpleFunction":{"F2R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F3R": {"simpleFunction":{"F3R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F4R": {"simpleFunction":{"F4R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F5R": {"simpleFunction":{"F5R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_F6R": {"simpleFunction":{"F6R_white":0.49, "F6R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+		
+        "acmrivian_policebar_S1R": {"simpleFunction":{"S1R_white":0.49, "S1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+		
+        "acmrivian_policebar_R1R": {"simpleFunction":{"R1R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R2R": {"simpleFunction":{"R2R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R3R": {"simpleFunction":{"R3R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R4R": {"simpleFunction":{"R4R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R5R": {"simpleFunction":{"R5R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_blue"},
+        "acmrivian_policebar_R6R": {"simpleFunction":{"R6R_white":0.49, "R6R_blue":1.0}, "off":"acmrivian_lightbar_whelen_legacy", "on":"acmrivian_lightbar_whelen_legacy_on_white", "on_intense":"acmrivian_lightbar_whelen_legacy_on_blue"},
+    },
+    "props": [
+        ["func"      , "mesh"            , "idRef:", "idX:", "idY:"          , "baseRotation"        , "rotation"               , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":100,
+            "lightRange":8,
+            "flareName":"vehicleBrakeLightFlare",
+            "lightCastShadows":false,
+            "texSize":64,
+            "shadowSoftness":1,
+            "flareScale":0.04,
+            "cookieName":"/art/special/BNG_light_cookie_lightbar.dds"
+        },
+        {
+            "lightBrightness":0.6,
+            "lightColor":{"r":0, "g":0, "b":455, "a":2500}
+        },
+        //red LEFT
+        ["F1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal":{"x":0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F2L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":170},"baseTranslationGlobal":{"x":0.145,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F3L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":160},"baseTranslationGlobal":{"x":0.277,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F4L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":150},"baseTranslationGlobal":{"x":0.409,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F5L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":140},"baseTranslationGlobal":{"x":0.508,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":135},"baseTranslationGlobal":{"x":0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["S1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":35},"baseTranslationGlobal":{"x":0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["R1L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":0}, "baseTranslationGlobal":{"x":0.046,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R2L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":10},"baseTranslationGlobal":{"x":0.145,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R3L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":20},"baseTranslationGlobal":{"x":0.277,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R4L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":30},"baseTranslationGlobal":{"x":0.409,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R5L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":40},"baseTranslationGlobal":{"x":0.508,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6L_red"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":45},"baseTranslationGlobal":{"x":0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+
+		{
+            "lightBrightness":0.6,
+            "lightColor":{"r":0, "g":0, "b":455, "a":2500}
+        },
+		//blue RIGHT
+        ["F1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal": {"x":-0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F2R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":190},"baseTranslationGlobal": {"x":-0.145,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F3R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":200},"baseTranslationGlobal": {"x":-0.277,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F4R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":210},"baseTranslationGlobal": {"x":-0.409,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F5R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":220},"baseTranslationGlobal": {"x":-0.508,"y":0.398,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":-135},"baseTranslationGlobal":{"x":-0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																   
+        ["S1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":-35},"baseTranslationGlobal":{"x":-0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+																																																	   
+        ["R1R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":0},"baseTranslationGlobal":  {"x":-0.046,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R2R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-10},"baseTranslationGlobal":{"x":-0.145,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R3R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-20},"baseTranslationGlobal":{"x":-0.277,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R4R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-30},"baseTranslationGlobal":{"x":-0.409,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R5R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":15, "y":0, "z":-40},"baseTranslationGlobal":{"x":-0.508,"y":0.642,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6R_blue"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-45},"baseTranslationGlobal":{"x":-0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		
+		{
+            "lightBrightness":1.5,
+            "lightColor":{"r":455, "g":455, "b":455, "a":2500}
+			"lightInnerAngle":0,
+            "lightOuterAngle":150,
+            "lightRange":12,
+		},
+		//white
+		["F1L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180},"baseTranslationGlobal":{"x":0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+		["F6L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":135},"baseTranslationGlobal":{"x":0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+		["R6L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":45},  "baseTranslationGlobal":{"x":0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		["S1L_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2l", "lightbar_4", {"x":0, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":35}, "baseTranslationGlobal":{"x":0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+		
+		["F1R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-15, "y":0, "z":180}, "baseTranslationGlobal":{"x":-0.046,"y":0.390,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["F6R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":-35, "y":0, "z":-135},"baseTranslationGlobal":{"x":-0.574,"y":0.446,"z":1.666},"deformGroup":"lightbar_break"}],
+        ["R6R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":35, "y":0, "z":-45},  "baseTranslationGlobal":{"x":-0.574,"y":0.595,"z":1.666},"deformGroup":"lightbar_break"}],
+		["S1R_white"    , "SPOTLIGHT"        , "lightbar_2","lightbar_2r", "lightbar_4", {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseRotationGlobal":{"x":90, "y":90, "z":-35}, "baseTranslationGlobal":{"x":-0.619,"y":0.520,"z":1.666},"deformGroup":"lightbar_break"}],
+    ],
+},
+}

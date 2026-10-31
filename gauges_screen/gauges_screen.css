@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: "Eurostile Next LT Pro";
+  font-size: 35px;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Eurostile Next LT Pro';
+  src: url('EurostileNextLTPro-SmBd.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Eurostile BQ';
+  src: url('Eurostile BQ.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}

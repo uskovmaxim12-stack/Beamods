@@ -1,0 +1,130 @@
+{
+"acmrivian": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Cherrier Vivace",
+    },
+    "slotType" : "main",
+    "slots": [
+        ["type", "default", "description"],
+        ["acmrivian_body","acmrivian_body", "Body", {"coreSlot":true}],
+        ["acmrivian_skins","acmrivian_skins", "Skins", {"coreSlot":true}],
+        ["skin_paint_design","", "Paint Design"],
+        ["licenseplate_design_2_1","","License Plate Design"],
+        ["acmrivian_mod", "", "Additional Modification"],
+    ],
+	"components": {
+        "electrics": {
+            "customValues": [
+                ["electricsName", "electricsFunction"],
+                ["lowbeam_sm","electrics.lowbeam * electrics.electricalLoadCoef"],
+                ["highbeam_sm","electrics.highbeam * electrics.electricalLoadCoef"],
+                ["lowhighbeam_sm","electrics.lowhighbeam * electrics.electricalLoadCoef"],
+                ["brakelights_sm","electrics.brakelights * electrics.electricalLoadCoef"],
+                ["reverse_sm","electrics.reverse * electrics.electricalLoadCoef"],
+                ["signal_L_sm","electrics.signal_L * electrics.electricalLoadCoef"],
+                ["signal_R_sm","electrics.signal_R * electrics.electricalLoadCoef"],
+                ["ignitionLevel_sm","electrics.ignitionLevel * electrics.electricalLoadCoef"],
+                ["fog_L_sm","electrics.fog_L * electrics.electricalLoadCoef"],
+                ["fog_R_sm","electrics.fog_R * electrics.electricalLoadCoef"],
+				
+                ["lamp_tunnel_sm","electrics.lamp_tunnel * electrics.electricalLoadCoef"],
+                ["lamp_main_sm","electrics.lamp_main * electrics.electricalLoadCoef"],
+                ["lamp_rl_sm","electrics.lamp_rl * electrics.electricalLoadCoef"],
+                ["lamp_rr_sm","electrics.lamp_rr * electrics.electricalLoadCoef"],
+                ["lamp_trunk_sm","electrics.lamp_trunk * electrics.electricalLoadCoef"],
+                ["lamp_frunk_sm","electrics.lamp_frunk * electrics.electricalLoadCoef"],
+            ]
+            "smoothers": [
+                ["electricsName", "smootherType", "params"],
+                ["lowbeam_sm","temporalNonLinear", [50,25]],
+                ["highbeam_sm","temporalNonLinear", [50,25]],
+                ["lowhighbeam_sm","temporalNonLinear", [50,25]],
+                ["brakelights_sm","temporalNonLinear", [50,50]],
+                ["reverse_sm","temporalNonLinear", [40,40]],
+                ["signal_L_sm","temporalNonLinear", [40,40]],
+                ["signal_R_sm","temporalNonLinear", [40,40]],
+                ["ignitionLevel_sm","temporalNonLinear", [40,20]],
+                ["fog_L_sm","temporalNonLinear", [40,20]],
+                ["fog_R_sm","temporalNonLinear", [40,20]],
+				
+                ["lamp_tunnel_sm","temporalNonLinear", [20,5]],
+                ["lamp_main_sm","temporalNonLinear", [20,5]],
+                ["lamp_rl_sm","temporalNonLinear", [20,5]],
+                ["lamp_rr_sm","temporalNonLinear", [20,5]],
+                ["lamp_trunk_sm","temporalNonLinear", [20,5]],
+                ["lamp_frunk_sm","temporalNonLinear", [20,5]],
+            ]
+        }
+    }
+    "scaledragCoef":2.4,
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$brakestrength", "range", "", "Brakes", 1, 0.6, 1.0, "Brake Force Multiplier", "Scales the overall brake torque for this setup", {"minDis":60, "maxDis":100}],
+        ["$ffbstrength", "range", "", "Chassis", 1, 0.5, 1.5, "Setup-Specific Force Feedback Multiplier", "Scales the force feedback strength for THIS SETUP ONLY", {"minDis":50, "maxDis":150}],
+    ],
+    "glowMap":{
+		
+			//tail
+            "acmrivian_lights_tail_brakelight":{"simpleFunction":{"brakelights":0.49},                                "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense"},
+			
+            "acmrivian_lights_tail_signal_L":{"simpleFunction":{"signal_L":0.49, "brakelights":1}, 		  "off":"acmrivian_lights", "on":"acmrivian_lights_on", "on_intense":"acmrivian_lights_on_intense"},
+            "acmrivian_lights_tail_signal_R":{"simpleFunction":{"signal_R":0.49, "brakelights":1}, 		  "off":"acmrivian_lights", "on":"acmrivian_lights_on", "on_intense":"acmrivian_lights_on_intense"},
+			
+			"acmrivian_lights_tail_L":{"simpleFunction":{"ignition":0.49, "signal_L":1}, 				  "off":"acmrivian_lights", "on":"acmrivian_lights_on", "on_intense":"acmrivian_lights_on_intense"},
+            "acmrivian_lights_tail_R":{"simpleFunction":{"ignition":0.49, "signal_R":1}, 				  "off":"acmrivian_lights", "on":"acmrivian_lights_on", "on_intense":"acmrivian_lights_on_intense"},
+			
+            "acmrivian_lights_tail":{"simpleFunction":{"ignition":0.49},     							  "off":"acmrivian_lights", "on":"acmrivian_lights_on"},
+			
+            "acmrivian_lights_tail_rearfog":{"simpleFunction":{"fog":1},     							  "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense"},
+            "acmrivian_lights_tail_reverse":{"simpleFunction":{"reverse":1}, 							  "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense"},
+			
+            "acmrivian_lights_tail_licenseplates":{"simpleFunction":{"lowhighbeam_sm":1}, 			      "off":"acmrivian_lights", "on":"acmrivian_lamp_white", "materialEmissiveScaling":{"on_max":1}},
+			
+			//pickup tail
+			"acmrivian_lights_tail_brakelight_pickup":{"simpleFunction":{"brakelights":0.49},             "off":"acmrivian_lights_pickup", "on":"acmrivian_lights_pickup_on_intense"},
+			
+			"acmrivian_lights_tail_signal_L_pickup":{"simpleFunction":{"signal_L":0.49, "brakelights":1}, "off":"acmrivian_lights_pickup", "on":"acmrivian_lights_pickup_on", "on_intense":"acmrivian_lights_pickup_on_intense"},
+            "acmrivian_lights_tail_signal_R_pickup":{"simpleFunction":{"signal_R":0.49, "brakelights":1}, "off":"acmrivian_lights_pickup", "on":"acmrivian_lights_pickup_on", "on_intense":"acmrivian_lights_pickup_on_intense"},
+			
+			"acmrivian_lights_tail_L_pickup":{"simpleFunction":{"ignition":0.49, "signal_L":1}, 		  "off":"acmrivian_lights_pickup", "on":"acmrivian_lights_pickup_on", "on_intense":"acmrivian_lights_pickup_on_intense"},
+            "acmrivian_lights_tail_R_pickup":{"simpleFunction":{"ignition":0.49, "signal_R":1}, 		  "off":"acmrivian_lights_pickup", "on":"acmrivian_lights_pickup_on", "on_intense":"acmrivian_lights_pickup_on_intense"},
+																										  
+            "acmrivian_lights_tail_pickup":{"simpleFunction":{"ignition":0.49},                 		  "off":"acmrivian_lights_pickup", "on":"acmrivian_lights_pickup_on"},
+																										  
+            "acmrivian_lights_tail_rearfog_pickup":{"simpleFunction":{"fog":1},                 		  "off":"acmrivian_lights_pickup", "on":"acmrivian_lights_pickup_on_intense"},
+            "acmrivian_lights_tail_reverse_pickup":{"simpleFunction":{"reverse":1},             		  "off":"acmrivian_lights_pickup", "on":"acmrivian_lights_pickup_on_intense"},
+			
+			"acmrivian_lights_tail_licenseplates_pickup":{"simpleFunction":{"lowhighbeam_sm":1}, 			      "off":"acmrivian_lights", "on":"acmrivian_lamp_white", "materialEmissiveScaling":{"on_max":1}},
+			
+			//head
+            "acmrivian_lights_head":{"simpleFunction":{"ignition":1}, "off":"acmrivian_lights", "on":"acmrivian_lights_head_on"},
+			
+            "acmrivian_lights_head_fog_L":{"simpleFunction":{"fog_L_sm":1}, "off":"acmrivian_lights", "on":"acmrivian_lights_head_on", "materialEmissiveScaling":{"on_max":1}},
+            "acmrivian_lights_head_fog_R":{"simpleFunction":{"fog_R_sm":1}, "off":"acmrivian_lights", "on":"acmrivian_lights_head_on", "materialEmissiveScaling":{"on_max":1}},
+			
+            "acmrivian_lights_head_L":{"simpleFunction":{"drl_signal_L":0.49,"signal_L":1.0}, "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense", "on_intense":"acmrivian_lights_head_on_orange"},
+            "acmrivian_lights_head_R":{"simpleFunction":{"drl_signal_R":0.49,"signal_R":1.0}, "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense", "on_intense":"acmrivian_lights_head_on_orange"},
+			
+			"acmrivian_lights_mirror_signal_L":{"simpleFunction":{"signal_L_sm":1}, "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense", "materialEmissiveScaling":{"on_max":1}},
+            "acmrivian_lights_mirror_signal_R":{"simpleFunction":{"signal_R_sm":1}, "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense", "materialEmissiveScaling":{"on_max":1}},
+			
+            "acmrivian_lights_head_lowhighbeam":{"simpleFunction":{"lowhighbeam_sm":1}, "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense", "materialEmissiveScaling":{"on_max":1}},
+            "acmrivian_lights_head_highbeam":{"simpleFunction":{"highbeam_sm":1}, "off":"acmrivian_lights", "on":"acmrivian_lights_on_intense", "materialEmissiveScaling":{"on_max":1}},
+			
+            "acmrivian_interior_floor_tunnel_pickup":{"simpleFunction":{"lamp_tunnel_sm":1}, "off":"acmrivian_interior_floor_tunnel_pickup", "on":"acmrivian_interior_floor_tunnel_pickup_on", "materialEmissiveScaling":{"on_max":1}},
+			
+			//gauges & interior
+			"acmrivian_gauges_screen":{"simpleFunction":{"ignition":0.49}, "off":"screen_off", "on":"acmrivian_gauges_screen"},
+			"acmrivian_navi":{"simpleFunction":{"ignition":0.49}, "off":"screen_off", "on":"acmrivian_navi"},
+			"acmrivian_symbols":{"simpleFunction":{"ignition":0.49}, "off":"acmrivian_symbols", "on":"acmrivian_symbols_on"},
+			"acmrivian_symbols_hazard":{"simpleFunction":{"ignition":0.49, "hazard":1.0}, "off":"acmrivian_symbols", "on":"acmrivian_symbols_on", "on_intense":"acmrivian_symbols_on_intense"},
+			
+			"acmrivian_lamp_main":{"simpleFunction":{"lamp_main_sm":0.49}, "off":"acmrivian_interior_roof", "on":"acmrivian_interior_roof_on", "materialEmissiveScaling":{"on_max":1}},
+			"acmrivian_lamp_RL":{"simpleFunction":{"lamp_rl_sm":0.49}, "off":"acmrivian_interior_roof", "on":"acmrivian_interior_roof_on", "materialEmissiveScaling":{"on_max":1}},
+			"acmrivian_lamp_RR":{"simpleFunction":{"lamp_rr_sm":0.49}, "off":"acmrivian_interior_roof", "on":"acmrivian_interior_roof_on", "materialEmissiveScaling":{"on_max":1}},
+			"acmrivian_lamp_trunk":{"simpleFunction":{"lamp_trunk_sm":0.49}, "off":"acmrivian_interior_roof", "on":"acmrivian_interior_roof_on", "materialEmissiveScaling":{"on_max":1}},
+			"acmrivian_lamp_frunk":{"simpleFunction":{"lamp_frunk_sm":0.49}, "off":"acmrivian_interior_roof", "on":"acmrivian_interior_roof_on", "materialEmissiveScaling":{"on_max":1}},
+    },
+},
+}

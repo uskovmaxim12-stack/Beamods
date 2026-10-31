@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="/vehicles/acmrivian/navi_screen/navigator.css" />
+</head>
+<body>
+  <script>
+    window.__screenInputEarlyQueue = [];
+
+    window.screenInput = window.screenInput || {
+      onInput: function (eventData) {
+        window.__screenInputEarlyQueue.push(eventData);
+      },
+      onHover: function () {},
+      onTrigger: function () {}
+    };
+
+    window.initScreenInput = window.initScreenInput || function (width, height, screenId, options) {
+      window.__screenInputEarlyConfig = {
+        width: width,
+        height: height,
+        screenId: screenId,
+        options: options || {}
+      };
+    };
+  </script>
+
+  <div id="bootscreen"></div>
+
+  <div style="height: 100%; width: 100%; position: relative;">
+    <div id="overflow-wrap" style="width: 100%; height: 100%; overflow: hidden">
+      <div id="mapContainer" style="overflow: visible;">
+        <svg style="overflow: visible;"></svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="timeDisplay"></div>
+
+  <div id="svg_background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 98; pointer-events: none;">
+    <object
+      id="naviSvg"
+      data="/vehicles/acmrivian/navi_screen/navi_screen.svg"
+      type="image/svg+xml"
+      style="width: 100%; height: 100%;">
+    </object>
+  </div>
+
+  <script src="/ui/modules/screenInput.js"></script>
+  <script src="/ui/ui-vue/src/services/navigator-class.js"></script>
+  <script src="/vehicles/acmrivian/navi_screen/navi_screen.js"></script>
+</body>
+</html>

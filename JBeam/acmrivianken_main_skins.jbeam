@@ -1,0 +1,326 @@
+{
+"acmrivian_skins": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Skins",
+        "value":50,
+    },
+    "slotType" : "acmrivian_skins",
+	    "slots": [
+        ["type", "default", "description"],
+        ["skin_glass","","Glass Tinted"],
+        ["skin_interior_acmrivian","acmrivian_interior_black","Interior Skins", {"coreSlot":true}],
+    ],
+},
+
+"acmrivian_body_pikes_peak": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Pikes Peak",
+        "value":2000,
+    },
+    "slotType" : "skin_paint_design",
+    "globalSkin" : "pikes_peak",
+},
+"acmrivian_body_CCCFD": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Fire-Rescue",
+        "value":2000,
+    },
+    "slotType" : "skin_paint_design",
+    "globalSkin" : "CCCFD",
+},
+"acmrivian_body_miami": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Miami-Edition",
+        "value":2000,
+    },
+    "slotType" : "skin_paint_design",
+    "globalSkin" : "miami",
+},
+"acmrivian_body_dubai_police": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Dubai Police",
+        "value":2000,
+    },
+    "slotType" : "skin_paint_design",
+    "globalSkin" : "dubai_police",
+},
+"acmrivian_body_mpd_police": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"MPD",
+        "value":2000,
+    },
+    "slotType" : "skin_paint_design",
+    "globalSkin" : "mpd_police",
+},
+"acmrivian_body_caltrans": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Caltrans",
+        "value":2000,
+    },
+    "slotType" : "skin_paint_design",
+    "globalSkin" : "caltrans",
+},
+"acmrivian_body_lightning_mcqueen": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Lightning McQueen",
+        "value":2000,
+    },
+    "slotType" : "skin_paint_design",
+    "globalSkin" : "lightning_mcqueen",
+},
+
+"acmrivian_glasstint_5": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Glass Tint (5%)",
+        "value":2000,
+    },
+    "slotType" : "skin_glass",
+    "globalSkin" : "glasstint_5",
+},
+"acmrivian_interior_black": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Black",
+        "value":2000,
+    },
+    "slotType" : "skin_interior_acmrivian",
+    "globalSkin" : "int_black",
+},
+"acmrivian_interior_beige": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Black-Beige",
+        "value":2000,
+    },
+    "slotType" : "skin_interior_acmrivian",
+    "globalSkin" : "int_beige",
+},
+"acmrivian_interior_blue": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"White-Blue",
+        "value":2000,
+    },
+    "slotType" : "skin_interior_acmrivian",
+    "globalSkin" : "int_blue",
+},
+"acmrivian_interior_white": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"White",
+        "value":2000,
+    },
+    "slotType" : "skin_interior_acmrivian",
+    "globalSkin" : "int_white",
+},
+
+"acmrivian_main_moldings_plastic": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Plastic Body Moldings",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_moldings",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_body_main_molding", ["acmrivian_body"]],
+         ["acmrivian_bumper_F_main_molding", ["acmrivian_bumper_F"]],
+         ["acmrivian_bumper_R_main_molding", ["acmrivian_bumper_R"]],
+         ["acmrivian_door_FL_main_molding", ["acmrivian_door_FL"]],
+         ["acmrivian_door_FR_main_molding", ["acmrivian_door_FR"]],
+         ["acmrivian_door_RL_main_molding", ["acmrivian_door_RL"]],
+         ["acmrivian_door_RR_main_molding", ["acmrivian_door_RR"]],
+         ["acmrivian_fender_L_main_molding", ["acmrivian_fender_FL"]],
+         ["acmrivian_fender_R_main_molding", ["acmrivian_fender_FR"]],
+    ],
+},
+"acmrivian_main_moldings_body_colored": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Body-Colored Body Moldings",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_moldings",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_body_main_molding", ["acmrivian_body"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_bumper_F_main_molding", ["acmrivian_bumper_F"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_bumper_R_main_molding", ["acmrivian_bumper_R"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_door_FL_main_molding", ["acmrivian_door_FL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_door_FR_main_molding", ["acmrivian_door_FR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_door_RL_main_molding", ["acmrivian_door_RL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_door_RR_main_molding", ["acmrivian_door_RR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_fender_L_main_molding", ["acmrivian_fender_FL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_fender_R_main_molding", ["acmrivian_fender_FR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+    ],
+},
+"acmrivian_main_moldings_body_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Body Moldings",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_moldings",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_body_main_molding", ["acmrivian_body"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_bumper_F_main_molding", ["acmrivian_bumper_F"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_bumper_R_main_molding", ["acmrivian_bumper_R"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_FL_main_molding", ["acmrivian_door_FL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_FR_main_molding", ["acmrivian_door_FR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_RL_main_molding", ["acmrivian_door_RL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_RR_main_molding", ["acmrivian_door_RR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_fender_L_main_molding", ["acmrivian_fender_FL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_fender_R_main_molding", ["acmrivian_fender_FR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+    ],
+},
+
+"acmrivian_body_pickup_moldings_plastic": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Plastic Body Moldings",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_pickup_moldings",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_bumper_F_main_molding", ["acmrivian_bumper_F"]],
+         ["acmrivian_door_FL_main_molding", ["acmrivian_door_FL"]],
+         ["acmrivian_door_FR_main_molding", ["acmrivian_door_FR"]],
+         ["acmrivian_fender_L_main_molding", ["acmrivian_fender_FL"]],
+         ["acmrivian_fender_R_main_molding", ["acmrivian_fender_FR"]],
+		 
+		 ["acmrivian_body_pickup_main_molding", ["acmrivian_body"]],
+		 ["acmrivian_bumper_R_pickup_main_molding", ["acmrivian_bumper_R"]],
+		 ["acmrivian_door_RL_pickup_main_molding", ["acmrivian_door_RL"]],
+         ["acmrivian_door_RR_pickup_main_molding", ["acmrivian_door_RR"]],
+    ],
+},
+"acmrivian_body_pickup_moldings_body_colored": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Body-Colored Body Moldings",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_pickup_moldings",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_bumper_F_main_molding", ["acmrivian_bumper_F"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_door_FL_main_molding", ["acmrivian_door_FL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_door_FR_main_molding", ["acmrivian_door_FR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_fender_L_main_molding", ["acmrivian_fender_FL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_fender_R_main_molding", ["acmrivian_fender_FR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+		 
+		 ["acmrivian_body_pickup_main_molding", ["acmrivian_body"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+		 ["acmrivian_bumper_R_pickup_main_molding", ["acmrivian_bumper_R"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+		 ["acmrivian_door_RL_pickup_main_molding", ["acmrivian_door_RL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+         ["acmrivian_door_RR_pickup_main_molding", ["acmrivian_door_RR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_body_ns"]]}],
+    ],
+},
+"acmrivian_body_pickup_moldings_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Body Moldings",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_pickup_moldings",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_bumper_F_main_molding", ["acmrivian_bumper_F"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_FL_main_molding", ["acmrivian_door_FL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_FR_main_molding", ["acmrivian_door_FR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_fender_L_main_molding", ["acmrivian_fender_FL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_fender_R_main_molding", ["acmrivian_fender_FR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+		 
+		 ["acmrivian_body_pickup_main_molding", ["acmrivian_body"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+		 ["acmrivian_bumper_R_pickup_main_molding", ["acmrivian_bumper_R"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+		 ["acmrivian_door_RL_pickup_main_molding", ["acmrivian_door_RL"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+         ["acmrivian_door_RR_pickup_main_molding", ["acmrivian_door_RR"],[], {"materialOverride":[["acmrivian_plastic","acmrivian_chromeblack"]]}],
+    ],
+},
+
+"acmrivian_body_trim_chrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Chrome Body Trim",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_trim",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_body_trim", ["acmrivian_body"]],
+    ],
+},
+"acmrivian_body_trim_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Body Trim",
+        "value":340,
+    },
+    "slotType" : "acmrivian_body_trim",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_body_trim", ["acmrivian_body"],[], {"materialOverride":[["acmrivian_chrome","acmrivian_chromeblack"]]}],
+    ],
+},
+
+"acmrivian_roof_mounts_chrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Chrome Roof Mounts",
+        "value":340,
+    },
+    "slotType" : "acmrivian_roof_mounts",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_roof_mounts", ["acmrivian_body"]],
+    ],
+},
+"acmrivian_roof_mounts_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Roof Mounts",
+        "value":340,
+    },
+    "slotType" : "acmrivian_roof_mounts",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_roof_mounts", ["acmrivian_body"],[], {"materialOverride":[["acmrivian_chromesatin","acmrivian_chromeblack"]]}],
+    ],
+},
+
+"acmrivian_roof_mounts_pickup_chrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Chrome Roof Mounts",
+        "value":340,
+    },
+    "slotType" : "acmrivian_roof_mounts_pickup",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_roof_mounts_pickup", ["acmrivian_body"]],
+    ],
+},
+"acmrivian_roof_mounts_pickup_antichrome": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Anti-Chrome Roof Mounts",
+        "value":340,
+    },
+    "slotType" : "acmrivian_roof_mounts_pickup",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_roof_mounts_pickup", ["acmrivian_body"],[], {"materialOverride":[["acmrivian_chromesatin","acmrivian_chromeblack"]]}],
+    ],
+},
+
+}

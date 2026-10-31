@@ -1,0 +1,130 @@
+{
+"acmrivian_towhitch": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Tow Hitch",
+        "value":410,
+    },
+    "slotType" : "acmrivian_towhitch",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["towhitch_alt", ["acmrivian_body","acmrivian_towhitch"],[],{"pos":{"x":0.0, "y":0.175, "z":-0.14}}],
+    ],
+    "slots2": [
+        ["name",          "allowTypes",      "denyTypes", "default", "description"],
+        ["trailer_small", ["trailer_small"], [],          "",        "Small Trailer", {"nodeOffset":{"x":0.0, "y":0.175, "z":-0.14}}],
+    ],
+    "nodes": [
+         ["id",  "posX", "posY", "posZ"],
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"selfCollision":true},
+         //--TOW HITCH--
+         {"nodeMaterial":"|NM_METAL"},
+         {"group":"acmrivian_towhitch"},
+         {"nodeWeight":5},
+         ["tw",  0.0,    2.93,   0.41,   {"couplerTag":"tow_hitch","couplerStrength":2001000,"couplerRadius":1}],
+         ["tw2", 0.0,    2.93,   0.34],
+         {"nodeOffset":""},
+         {"group":""},
+    ],
+    "ties":[
+        ["id1:", "maxLen", "rate", "short", "long", "group", "maxforce"],
+        ["tw", 0.75, 1, 1, 1, "acmrivian_towhitch", 10000000],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TOW HITCH--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1344840,"beamDamp":195},
+          {"beamDeform":129000,"beamStrength":890000},
+          ["tw",   "r4ll"],
+          ["tw",   "r4"],
+          ["tw",   "r4rr"],
+          ["tw",   "r2ll"],
+          ["tw",   "r2"],
+          ["tw",   "r2rr"],
+
+          ["tw2",  "r4ll"],
+          ["tw2",  "r4"],
+          ["tw2",  "r4rr"],
+          ["tw2",  "r2ll"],
+          ["tw2",  "r2"],
+          ["tw2",  "r2rr"],
+
+          ["tw",   "tw2"],
+    ],
+    "triangles": [
+            ["id1:", "id2:", "id3:"],
+            {"group":"towhitch"},
+            {"triangleType":"NONCOLLIDABLE"},
+            ["tw",   "tw2",  "r2"],
+            ["r2",   "r4",   "tw"],
+            {"triangleType":"NORMALTYPE"},
+    ],
+},
+"acmrivian_towhitch_pickup": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Tow Hitch",
+        "value":410,
+    },
+    "slotType" : "acmrivian_towhitch_pickup",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["towhitch_alt", ["acmrivian_body","acmrivian_towhitch"],[],{"pos":{"x":0.0, "y":0.65, "z":-0.14}}],
+    ],
+    "slots2": [
+        ["name",          "allowTypes",      "denyTypes", "default", "description"],
+        ["trailer_small", ["trailer_small"], [],          "",        "Small Trailer", {"nodeOffset":{"x":0.0, "y":0.65, "z":-0.14}}],
+    ],
+    "nodes": [
+         ["id",  "posX", "posY", "posZ"],
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"selfCollision":true},
+         //--TOW HITCH--
+         {"nodeMaterial":"|NM_METAL"},
+         {"group":"acmrivian_towhitch"},
+         {"nodeWeight":5},
+         ["tw",  0.0,    3.4,   0.41,   {"couplerTag":"tow_hitch","couplerStrength":2001000,"couplerRadius":1}],
+         ["tw2", 0.0,    3.4,   0.34],
+         {"nodeOffset":""},
+         {"group":""},
+    ],
+    "ties":[
+        ["id1:", "maxLen", "rate", "short", "long", "group", "maxforce"],
+        ["tw", 0.75, 1, 1, 1, "acmrivian_towhitch", 10000000],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TOW HITCH--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1344840,"beamDamp":195},
+          {"beamDeform":129000,"beamStrength":890000},
+          ["tw",   "r4ll"],
+          ["tw",   "r4"],
+          ["tw",   "r4rr"],
+          ["tw",   "r2ll"],
+          ["tw",   "r2"],
+          ["tw",   "r2rr"],
+
+          ["tw2",  "r4ll"],
+          ["tw2",  "r4"],
+          ["tw2",  "r4rr"],
+          ["tw2",  "r2ll"],
+          ["tw2",  "r2"],
+          ["tw2",  "r2rr"],
+
+          ["tw",   "tw2"],
+    ],
+    "triangles": [
+            ["id1:", "id2:", "id3:"],
+            {"group":"towhitch"},
+            {"triangleType":"NONCOLLIDABLE"},
+            ["tw",   "tw2",  "r2"],
+            ["r2",   "r4",   "tw"],
+            {"triangleType":"NORMALTYPE"},
+    ],
+},
+}

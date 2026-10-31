@@ -1,0 +1,87 @@
+{
+"acmrivian_brake_F": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Front Disc Brakes",
+        "value":210,
+    },
+    "slotType" : "acmrivian_brake_F",
+    "slots": [
+        ["type", "default", "description"],
+        ["brakepad_F","brakepad_F_premium", "Front Brake Pads", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["brake_hub_5l",                 ["wheel_FR",     "wheelhub_FR"], [],    {"pos":{"x":-0.77, "y":-1.342, "z":0.32}, "scale":{"x":0.9, "y":1.15,  "z":1.15},  "rot":{"x":0,   "y":0,   "z":0}}],
+        ["brake_hub_5l",                 ["wheel_FL",     "wheelhub_FL"], [],    {"pos":{"x": 0.77, "y":-1.342, "z":0.32}, "scale":{"x":0.9, "y":1.15,  "z":1.15},  "rot":{"x":0,   "y":0,   "z":180}}],
+        ["brake_disc_drilled",           ["wheel_FR",     "wheelhub_FR"], [],    {"pos":{"x":-0.77, "y":-1.342, "z":0.32}, "scale":{"x":1.0, "y":1.2,  "z":1.2},    "rot":{"x":0,   "y":0,   "z":0}}],
+        ["brake_disc_drilled",           ["wheel_FL",     "wheelhub_FL"], [],    {"pos":{"x": 0.77, "y":-1.342, "z":0.32}, "scale":{"x":1.0, "y":1.2,  "z":1.2},    "rot":{"x":180, "y":0,   "z":0}}],
+        ["acmrivian_brake_caliper_F",    ["acmrivian_hub_FR","wheelhub_FR"], [], {"pos":{"x":-0.78, "y":-1.332, "z":0.32}, "scale":{"x":1.0, "y":1.0,   "z":1.0},   "rot":{"x":0,   "y":180,   "z":0}}],
+        ["acmrivian_brake_caliper_F",    ["acmrivian_hub_FL","wheelhub_FL"], [], {"pos":{"x": 0.78, "y":-1.332, "z":0.32}, "scale":{"x":1.0, "y":1.0,   "z":1.0},   "rot":{"x":0,   "y":0, "z":0}}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+        {"brakeTorque":"$=$brakestrength*4500"},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":0},
+        {"brakeSpring":100},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.45},
+        {"brakeMass":8},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":20},
+        //abs
+        {"absSlipRatioTarget":0.4},
+        //brake sounds
+        {"squealCoefNatural": 0.0, "squealCoefLowSpeed": 0.0}
+    ],
+},
+"acmrivian_brake_R": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Rear Disc Brakes",
+        "value":180,
+    },
+    "slotType" : "acmrivian_brake_R",
+    "slots": [
+        ["type", "default", "description"],
+        ["brakepad_R","brakepad_R_premium", "Rear Brake Pads", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["brake_hub_5l",                 ["wheel_RR",    "wheelhub_RR"], [],    {"pos":{"x":-0.77, "y":1.725, "z":0.32}, "scale":{"x":0.9,  "y":1.15,  "z":1.15},    "rot":{"x":0,   "y":0,   "z":0}}],
+        ["brake_hub_5l",                 ["wheel_RL",    "wheelhub_RL"], [],    {"pos":{"x": 0.77, "y":1.725, "z":0.32}, "scale":{"x":0.9,  "y":1.15,  "z":1.15},    "rot":{"x":0,   "y":0,   "z":180}}],
+        ["brake_disc_drilled",           ["wheel_RR",    "wheelhub_RR"], [],    {"pos":{"x":-0.77, "y":1.725, "z":0.32}, "scale":{"x":0.93, "y":1.15, "z":1.15},     "rot":{"x":0,   "y":0,   "z":0}}],
+        ["brake_disc_drilled",           ["wheel_RL",    "wheelhub_RL"], [],    {"pos":{"x": 0.77, "y":1.725, "z":0.32}, "scale":{"x":0.93, "y":1.15, "z":1.15},     "rot":{"x":180, "y":0,   "z":0}}],
+        ["acmrivian_brake_caliper_R",    ["acmrivian_hub_R","wheelhub_RR"], [], {"pos":{"x":-0.77, "y":1.725, "z":0.32}, "scale":{"x":1.0,  "y":1.0, "z":1.0},       "rot":{"x":0,   "y":180,   "z":0}}],
+        ["acmrivian_brake_caliper_R",    ["acmrivian_hub_R","wheelhub_RL"], [], {"pos":{"x": 0.77, "y":1.725, "z":0.32}, "scale":{"x":1.0,  "y":1.0, "z":1.0},       "rot":{"x":0,   "y":0, "z":0}}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+        {"brakeTorque":"$=$brakestrength*2500"},
+        {"brakeInputSplit":0.5},
+        {"brakeSplitCoef":0.5},
+        {"parkingTorque":3000},
+        {"brakeSpring":100},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.35},
+        {"brakeMass":6},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":20},
+        //abs
+        {"absSlipRatioTarget":0.25},
+        //brake sounds
+        {"squealCoefNatural": 0.0, "squealCoefLowSpeed": 0.0}
+    ],
+},
+}

@@ -1,0 +1,223 @@
+{
+"acmrivian_tire_F_R22": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"275/45 R22 Continental Contact Eco Front Tires",
+        "value":410,
+    },
+    "slotType" : "acmrivian_tire_22_F",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["acmrivian_tire_continental_contact_eco", ["wheel_FR","tire_FR"], [], {"pos":{"x":-0.5, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ["acmrivian_tire_continental_contact_eco", ["wheel_FL","tire_FL"], [], {"pos":{"x": 0.5, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$tirepressure_F", "range", "psi", "Wheels", 30, 0, 50, "Tire Pressure", "Relative to atmospheric pressure", {"subCategory":"Rear"}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        {"disableMeshBreaking":false,"disableHubMeshBreaking":false},
+        {"hasTire":true},
+        {"enableTireReinfBeams":false},
+        {"enableTireLbeams":true},
+        {"enableTireSideReinfBeams":false},
+        {"enableTreadReinfBeams":true},
+        {"enableTirePeripheryReinfBeams":true},
+
+        //general settings
+        {"radius":0.415},
+        {"tireWidth":0.27},
+
+        //tire options
+        {"wheelSideBeamSpring":"$=$tirepressure_F*850","wheelSideBeamDamp":50},
+        {"wheelSideBeamSpringExpansion":551000,"wheelSideBeamDampExpansion":40},
+        {"wheelSideTransitionZone":0.08,"wheelSideBeamPrecompression":0.99},
+
+        {"wheelReinfBeamSpring":40000,"wheelReinfBeamDamp":225},
+        {"wheelReinfBeamDampCutoffHz":500,"wheelReinfBeamPrecompression":0.985},
+
+        {"wheelTreadBeamSpring":151000,"wheelTreadBeamDamp":85},
+        {"wheelTreadBeamDampCutoffHz":500,"wheelTreadBeamPrecompression":0.985},
+
+        {"wheelTreadReinfBeamSpring":281000,"wheelTreadReinfBeamDamp":75},
+        {"wheelTreadReinfBeamDampCutoffHz":500,"wheelTreadReinfBeamPrecompression":0.985},
+
+        {"wheelPeripheryBeamSpring":101000,"wheelPeripheryBeamDamp":55},
+        {"wheelPeripheryBeamDampCutoffHz":500,"wheelPeripheryBeamPrecompression":0.985},
+
+        {"wheelPeripheryReinfBeamSpring":201000,"wheelPeripheryReinfBeamDamp":45},
+        {"wheelPeripheryReinfBeamDampCutoffHz":500,"wheelPeripheryReinfBeamPrecompression":0.985},
+
+        //general tire values
+        {"nodeWeight":0.22},
+        {"nodeMaterial":"|NM_RUBBER"},
+        {"triangleCollision":false},
+        {"pressurePSI":"$tirepressure_F"},
+        {"dragCoef":5},
+
+        //groundmodel friction multipliers
+        {"frictionCoef":1.0},
+        {"slidingFrictionCoef":1.0},
+        {"stribeckExponent":1.5},
+        {"treadCoef":0.5},
+
+        //advanced friction values
+        {"noLoadCoef":1.8},
+        {"loadSensitivitySlope":0.000155},
+        {"fullLoadCoef":0.75},
+        {"softnessCoef":0.6},
+
+        //deform values
+        {"wheelSideBeamDeform":22000,"wheelSideBeamStrength":30000},
+        {"wheelTreadBeamDeform":17000,"wheelTreadBeamStrength":22000},
+        {"wheelPeripheryBeamDeform":60000,"wheelPeripheryBeamStrength":60000},
+    ],
+},
+"acmrivian_tire_F_R26": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"275/45 R26 Michelin Pilot Sport 5 Front Tires",
+        "value":410,
+    },
+    "slotType" : "acmrivian_tire_26_F",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["acmrivian_tire_michelin_pilot_sport_5", ["wheel_FR","tire_FR"], [], {"pos":{"x":-0.5, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ["acmrivian_tire_michelin_pilot_sport_5", ["wheel_FL","tire_FL"], [], {"pos":{"x": 0.5, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$tirepressure_F", "range", "psi", "Wheels", 30, 0, 50, "Tire Pressure", "Relative to atmospheric pressure", {"subCategory":"Rear"}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        {"disableMeshBreaking":false,"disableHubMeshBreaking":false},
+        {"hasTire":true},
+        {"enableTireReinfBeams":false},
+        {"enableTireLbeams":true},
+        {"enableTireSideReinfBeams":false},
+        {"enableTreadReinfBeams":true},
+        {"enableTirePeripheryReinfBeams":true},
+
+        //tire options
+        {"wheelSideBeamSpring":"$=$tirepressure_F*1167","wheelSideBeamDamp":15},
+        {"wheelSideBeamSpringExpansion":501000,"wheelSideBeamDampExpansion":45},
+        {"wheelSideTransitionZone":0.12,"wheelSideBeamPrecompression":0.985},
+
+        {"wheelReinfBeamSpring":38000,"wheelReinfBeamDamp":225},
+        {"wheelReinfBeamDampCutoffHz":500,"wheelReinfBeamPrecompression":0.98},
+
+        {"wheelTreadBeamSpring":171000,"wheelTreadBeamDamp":100},
+        {"wheelTreadBeamDampCutoffHz":500,"wheelTreadBeamPrecompression":0.98},
+
+        {"wheelTreadReinfBeamSpring":171000,"wheelTreadReinfBeamDamp":80},
+        {"wheelTreadReinfBeamDampCutoffHz":500,"wheelTreadReinfBeamPrecompression":0.98},
+
+        {"wheelPeripheryBeamSpring":101000,"wheelPeripheryBeamDamp":45},
+        {"wheelPeripheryBeamDampCutoffHz":500,"wheelPeripheryBeamPrecompression":0.98},
+
+        {"wheelPeripheryReinfBeamSpring":101000,"wheelPeripheryReinfBeamDamp":45},
+        {"wheelPeripheryReinfBeamDampCutoffHz":500,"wheelPeripheryReinfBeamPrecompression":0.98},
+
+        //general tire values
+        {"nodeWeight":0.195},
+        {"nodeMaterial":"|NM_RUBBER"},
+        {"triangleCollision":false},
+        {"pressurePSI":"$tirepressure_R"},
+        {"dragCoef":5},
+
+        //groundmodel friction multipliers
+        {"frictionCoef":1.0},
+        {"slidingFrictionCoef":1.0},
+        {"stribeckExponent":1.5},
+        {"stribeckVelMult":1.5},
+        {"treadCoef":0.5},
+
+        //advanced friction values
+        {"noLoadCoef":2},
+        {"loadSensitivitySlope":0.000155},
+        {"fullLoadCoef":0.9},
+        {"softnessCoef":0.6},
+
+        //deform values
+        {"wheelSideBeamDeform":17000,"wheelSideBeamStrength":22000},
+        {"wheelTreadBeamDeform":12000,"wheelTreadBeamStrength":16000},
+        {"wheelPeripheryBeamDeform":55000,"wheelPeripheryBeamStrength":55000},
+    ],
+},
+"acmrivian_tire_offroad_F_R22": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"R22 Off-Road Front Tires",
+        "value":410,
+    },
+    "slotType" : "acmrivian_tire_22_F",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["acmrivian_tire_offroad", ["wheel_FR","tire_FR"], [], {"pos":{"x":-0.5, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1.0, "y":1.0, "z":1.0}, "materialOverride":[["offroadtire", "acmrivian_offroadtire"]]}],
+        ["acmrivian_tire_offroad", ["wheel_FL","tire_FL"], [], {"pos":{"x": 0.5, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}, "materialOverride":[["offroadtire", "acmrivian_offroadtire"]]}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$tirepressure_F", "range", "psi", "Wheels", 25, 0, 40, "Tire Pressure", "Relative to atmospheric pressure", {"subCategory":"Rear"}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        {"disableMeshBreaking":false,"disableHubMeshBreaking":false},
+        {"hasTire":true},
+        {"enableTireReinfBeams":false},
+        {"enableTireLbeams":true},
+        {"enableTireSideReinfBeams":false},
+        {"enableTreadReinfBeams":true},
+        {"enableTirePeripheryReinfBeams":true},
+
+        //general settings
+        {"radius":0.415},
+        {"tireWidth":0.27},
+
+        //tire options
+        {"wheelSideBeamSpring":"$=$tirepressure_F*880","wheelSideBeamDamp":40},
+        {"wheelSideBeamSpringExpansion":501000,"wheelSideBeamDampExpansion":40},
+        {"wheelSideTransitionZone":0.08,"wheelSideBeamPrecompression":0.99},
+
+        {"wheelReinfBeamSpring":16000,"wheelReinfBeamDamp":210},
+        {"wheelReinfBeamDampCutoffHz":500,"wheelReinfBeamPrecompression":0.99},
+
+        {"wheelTreadBeamSpring":105000,"wheelTreadBeamDamp":85},
+        {"wheelTreadBeamDampCutoffHz":500,"wheelTreadBeamPrecompression":0.99},
+
+        {"wheelTreadReinfBeamSpring":105000,"wheelTreadReinfBeamDamp":85},
+        {"wheelTreadReinfBeamDampCutoffHz":500,"wheelTreadReinfBeamPrecompression":0.99},
+
+        {"wheelPeripheryBeamSpring":65000,"wheelPeripheryBeamDamp":55},
+        {"wheelPeripheryBeamDampCutoffHz":500,"wheelPeripheryBeamPrecompression":0.99},
+
+        {"wheelPeripheryReinfBeamSpring":35000,"wheelPeripheryReinfBeamDamp":55},
+        {"wheelPeripheryReinfBeamDampCutoffHz":500,"wheelPeripheryReinfBeamPrecompression":0.99},
+
+        //general tire values
+        {"nodeWeight":0.21},
+        {"nodeMaterial":"|NM_RUBBER"},
+        {"triangleCollision":false},
+        {"pressurePSI":"$tirepressure_F"},
+        {"dragCoef":5},
+
+        //groundmodel friction multipliers
+        {"frictionCoef":1.1},
+        {"slidingFrictionCoef":1.02},
+        {"treadCoef":0.85},
+
+        //advanced friction values
+        {"noLoadCoef":1.9},
+        {"loadSensitivitySlope":0.00012},
+        {"fullLoadCoef":0.85},
+        {"softnessCoef":0.6},
+
+        //deform values
+        {"wheelSideBeamDeform":31000,"wheelSideBeamStrength":36000},
+        {"wheelTreadBeamDeform":25000,"wheelTreadBeamStrength":33000},
+        {"wheelPeripheryBeamDeform":70000,"wheelPeripheryBeamStrength":70000},
+    ],
+},
+}

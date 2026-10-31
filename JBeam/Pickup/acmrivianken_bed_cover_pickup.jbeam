@@ -1,0 +1,96 @@
+{
+"acmrivian_bed_cover": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"Bed Cover",
+        "value":350,
+    },
+    "slotType" : "acmrivian_bed_cover",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["acmrivian_bed_cover", ["acmrivian_bed_cover"]],
+    ],
+	"triggers":[
+        ["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["bedcover", "", "bc1l","bc1r","q1r", "box", {"x":0.08, "y":0.02, "z":0.04}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.14, "y":-0.0, "z":-0.0}],
+    ],
+    "triggerEventLinks":[
+        ["triggerId:triggers", "action", "targetEventId:events"],
+        ["bedcover", "action0", "bedcover"],
+    ],
+    "events":[
+        ["id", "title", "desc"],
+        ["bedcover", "", "", {"onDown":"electrics.values.bedcover = 1 - (electrics.values.bedcover or 0)", "order": 1}],
+    ],
+	"hydros": [
+        ["id1:","id2:"],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        {"beamSpring":50000,"beamDamp":50,"beamDeform":"FLT_MAX","beamStrength":125000},
+        ["bc1l","bc2l", {"factor":9.85, "inputSource":"bedcover","inLimit":1.0,"outLimit":1.0,"inRate":5,"outRate":5,"inputFactor":1.0}],
+        ["bc1r","bc2r", {"factor":9.85, "inputSource":"bedcover","inLimit":1.0,"outLimit":1.0,"inRate":5,"outRate":5,"inputFactor":1.0}],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+	"rails": {
+        "bed_cover_rail_left":{"links:":["q1l", "q3l"], "broken:":[], "looped":false, "capped":true}
+        "bed_cover_rail_right":{"links:":["q1r", "q3r"], "broken:":[], "looped":false, "capped":true}
+    },
+	"slidenodes": [
+		["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+		["bc1l", "bed_cover_rail_left",  true, true, 0.0, 500000, 50000, "FLT_MAX"],
+		["bc1r", "bed_cover_rail_right", true, true, 0.0, 500000, 50000, "FLT_MAX"],
+	],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--REAR BUMPER--
+         {"nodeWeight":0.7},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":["acmrivian_bed_cover"]},
+         {"collision":false},
+         {"selfCollision":false},
+         ["bc1l",0.7909,1.7195,1.0809],
+         ["bc1r",-0.7909,1.7195,1.0809],
+		 ["bc2l",0.7909,1.5686,1.0809],
+         ["bc2r",-0.7909,1.5686,1.0809],
+
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":51000,"beamDamp":50},
+          {"beamDeform":50000,"beamStrength":59000},
+          //main shape
+          {"deformLimitExpansion":1.2},
+          ["bc1l", "bc1r"],
+          ["bc2l", "bc2r", {"beamSpring":500000}],
+
+          //crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":10000,"beamStrength":59000},
+		  ["bc1l", "bc2r"],
+		  ["bc1r", "bc2l"],
+		  
+		  //attach
+		  {"beamSpring":1051000,"beamDamp":50},
+		  ["bc2l", "q1l"],
+		  ["bc2l", "q2l"],
+		  ["bc2l", "q4l"],
+		  ["bc2l", "q8l"],
+		  ["bc2l", "q1el"],
+		  ["bc2l", "rf4l"],
+		  
+		  ["bc2r", "q1r"],
+		  ["bc2r", "q2r"],
+		  ["bc2r", "q4r"],
+		  ["bc2r", "q8r"],
+		  ["bc2r", "q1er"],
+		  ["bc2r", "rf4r"],
+
+		  ["bc2l", "rf4"],
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+}

@@ -1,0 +1,58 @@
+{
+"acmrivian_bed_cargo_load_box_XL": {
+    "information":{
+        "authors":"Kenemation",
+        "name":"1x Cargo Box XL Slot",
+        "value":0,
+    },
+    "slotType" : ["acmrivian_bed_load"],
+    "slots2":[
+        ["name",                      "allowTypes",                  "denyTypes", "default",                   "description"],
+        ["cargo_load_box_XL_A_90deg", ["cargo_load_box_XL_A_90deg"], [],          "cargo_load_box_XL_A_90deg", "Box Type",    {"coreSlot":true,"nodeMove":{"x":0, "y":2.43, "z":0.6},"variables":{"$dragCoef":15}}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"deformGroup":"cargo_load_box_xl_FrontStrap","deformMaterialBase":"woodplanks","deformMaterialDamaged":"invis"},
+        ["woodplanks_straps_boxutility_small", ["box_A", "acmrivian_bed"],[],{"pos":{"x":0.0, "y":2.0, "z":0.6}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1.0, "y":0.51, "z":1.02}}],
+        {"deformGroup":"cargo_load_box_xl_RearStrap","deformMaterialBase":"woodplanks","deformMaterialDamaged":"invis"},
+        ["woodplanks_straps_boxutility_small", ["box_A", "acmrivian_bed"],[],{"pos":{"x":0.0, "y":2.855, "z":0.6}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1.0, "y":0.51, "z":1.02}}],
+        {"deformGroup":""},
+   ],
+   "beams": [
+       ["id1:",   "id2:"],
+       {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+
+       {"beamSpring":1501000,"beamDamp":30},
+       {"beamDeform":35000,"beamStrength":35000},
+       {"breakGroup":"cargo_load_box_xl_FrontStrap"}
+       {"deformGroup":"cargo_load_box_xl_FrontStrap"}
+       ["box_A_0",  "q1l"],
+       ["box_A_0",  "q2l"],
+	   
+	   ["box_A_4",  "q1l"],
+       ["box_A_4",  "q2l"],
+	   ["box_A_4",  "q1r"],
+       ["box_A_4",  "q2r"],
+	   
+	   ["box_A_2",  "q1r"],
+       ["box_A_2",  "q2r"],
+
+       {"breakGroup":"cargo_load_box_xl_RearStrap"}
+       {"deformGroup":"cargo_load_box_xl_RearStrap"}
+       ["box_A_15", "q2l"],
+       ["box_A_15", "q3l"],
+	   
+	   ["box_A_7",  "q2l"],
+       ["box_A_7",  "q3l"],
+       ["box_A_7",  "q2r"],
+       ["box_A_7",  "q3r"],
+
+       ["box_A_9",  "q2r"],
+       ["box_A_9",  "q3r"],
+
+       {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+       {"breakGroup":""}
+       {"deformGroup":""}
+   ],
+},
+}

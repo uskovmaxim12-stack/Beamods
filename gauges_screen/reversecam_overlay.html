@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root {
+  --yellow: #FFE100;
+  --white: #FFFFFF;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+body {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+#overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.guide {
+  fill: none;
+  stroke: var(--yellow);
+  stroke-width: 4.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.center {
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 4.8;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+</style>
+</head>
+
+<body>
+
+<svg id="overlay" viewBox="0 0 1000 600" preserveAspectRatio="none">
+  <path id="leftGuide" class="guide"></path>
+  <path id="rightGuide" class="guide"></path>
+  <path id="centerGuide" class="center"></path>
+</svg>
+
+<script>
+const leftGuide = document.getElementById('leftGuide');
+const rightGuide = document.getElementById('rightGuide');
+const centerGuide = document.getElementById('centerGuide');
+
+const cfg = {
+  bottomY: 575,
+  topY: 300,
+  leftBottomX: 140,
+  rightBottomX: 860,
+  leftTopX: 350,
+  rightTopX: 650,
+  maxSteer: 180,
+  steeringWheelMax: 450
+};
+
+function clamp(v, min, max) {
+  return Math.max(min, Math.min(max, v));
+}
+
+function lerp(a, b, t) {
+  return a + (b - a) * t;
+}
+
+function basePoint(t, side) {
+  const bottomX = side < 0 ? cfg.leftBottomX : cfg.rightBottomX;
+  const topX = side < 0 ? cfg.leftTopX : cfg.rightTopX;
+
+  return {
+    x: lerp(bottomX, topX, t),
+    y: lerp(cfg.bottomY, cfg.topY, t)
+  };
+}
+
+function turnShift(t, steer) {
+  const a = Math.pow(t, 1.8);
+  const b = Math.pow(t, 3.0);
+  return steer * cfg.maxSteer * (0.6 * a + 0.4 * b);
+}
+
+function makePoint(t, side, steer) {
+  const base = basePoint(t, side);
+  return {
+    x: base.x + turnShift(t, steer),
+    y: base.y
+  };
+}
+
+function buildSide(side, steer) {
+  const pts = [];
+  for (let i = 0; i <= 30; i++) {
+    const t = i / 30;
+    pts.push(makePoint(t, side, steer));
+  }
+  return pts;
+}
+
+function path(points) {
+  return points.map((p, i) =>
+    (i ? "L" : "M") + " " + p.x + "," + p.y
+  ).join(" ");
+}
+
+function buildCenter(left, right) {
+  const pts = [];
+  for (let i = 0; i < left.length; i++) {
+    pts.push({
+      x: (left[i].x + right[i].x) / 2,
+      y: left[i].y
+    });
+  }
+  return pts;
+}
+
+function render(data = { steering: 0 }) {
+  const raw = data.steering || 0;
+  const steer = clamp(raw / cfg.steeringWheelMax, -1, 1);
+
+  const left = buildSide(-1, steer);
+  const right = buildSide(1, steer);
+  const center = buildCenter(left, right);
+
+  leftGuide.setAttribute("d", path(left));
+  rightGuide.setAttribute("d", path(right));
+  centerGuide.setAttribute("d", path(center));
+}
+
+window.update = render;
+render({ steering: 0 });
+
+</script>
+</body>
+</html>
