@@ -171,9 +171,9 @@
             {"deformGroup":""},
 			
 			{"deformGroup":"display_break", "deformMaterialBase":"acmrivian_reversecam", "deformMaterialDamaged":"invis"},
-            ["acmrivian_reversecam", ["acmrivian_dash"]],
-			["acmrivian_reversecam", ["acmrivian_dash"], [],{"materialOverride":[["acmrivian_reversecam","acmrivian_reversecam_overlay"]], "pos":{"x": 0.0, "y":0.001, "z":0.0}}],
-			{"deformGroup":""},
+["acmrivian_reversecam", ["acmrivian_dash"], [], {"scale":{"x":-1, "y":1, "z":1}}],
+["acmrivian_reversecam", ["acmrivian_dash"], [], {"scale":{"x":-1, "y":1, "z":1}, "materialOverride":[["acmrivian_reversecam","acmrivian_reversecam_overlay"]], "pos":{"x": 0.0, "y":0.001, "z":0.0}}],
+{"deformGroup":""},
     ],
 },
 "acmrivian_gauges_pickup": {
